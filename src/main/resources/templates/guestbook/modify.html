@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<th:block th:replace="~{/layout/basic :: setContent(~{this::content})}">
+    <th:block th:fragment="content">
+        <h1 class="mt-4">Guestbook Read Page</h1>
+
+        <form id="modifyform" th:action="@{/guestbook/modify}" th:method="post">
+        <div class="form-group">
+            <label for="">Gno</label>
+            <input type="text" name="gno" class="form-control" readonly th:value="${dto.gno}">
+        </div>
+        <input type="hidden" name="page" th:value="${requestDTO.page}">
+        <input type="hidden" name="page" th:value="${requestDTO.type}">
+        <input type="hidden" name="page" th:value="${requestDTO.keyword}">
+        <div class="form-group">
+            <label for="">Title</label>
+            <input type="text" name="title" class="form-control"  th:value="${dto.title}">
+        </div>
+
+        <div class="form-group">
+            <label for="">content</label>
+            <textarea type="text" name="content" class="form-control" rows="5" >[[${dto.content}]]</textarea>
+        </div>
+        <div class="form-group">
+            <label for="">Writer</label>
+            <input type="text" name="writer" class="form-control" readonly th:value="${dto.writer}">
+        </div>
+
+        <div class="form-group">
+            <label for="">RegDate</label>
+            <input type="text" class="form-control" readonly
+                th:value="${#temporals.format(dto.regDate, 'yyyy/MM/dd HH:mm:ss')}">
+        </div>
+
+        <div class="form-group">
+            <label for="">ModDate</label>
+            <input type="text" class="form-control" readonly
+                th:value="${#temporals.format(dto.regDate, 'yyyy/MM/dd HH:mm:ss')}">
+        </div>
+            <div class="form-group" style="margin-top: 10px;">
+                <button type="button" id="btnModify" class="btn btn-primary">Modify</button>
+                <!-- <button type="button" th:onclick ="|location.href='@{/guestbook/list(page=${requestDTO.page})}'|" class="btn btn-info">List Page</button> -->
+                <button type="button" id="btnList" class="btn btn-info">List</button>
+                <button type="button" id="btnRemove"class="btn btn-danger">Remove</button>
+            </div>
+        </form>
+
+        <div id="myModal" class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal title</h5>
+                        <button type="button" class="btn-close xclose" data-bs-dismiss="modal" aria-label="Close">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                        <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script th:inline="javascript">
+            // const actionForm = document.querySelector("form")
+            const actionForm = document.querySelector("#modifyform")
+           btnModify = document.querySelector("#btnModify")
+           btnList   = document.querySelector("#btnList")
+           btnRemove = document.querySelector("#btnRemove")
+            
+            btnModify.onclick = function(){
+                actionForm.setAttribute("action", /*@{/guestbook/modify}*/'modify')
+                actionForm.setAttribute("method", "post")
+                actionForm.submit()
+            }
+            
+            btnList.onclick = function(){
+                // actionForm.setAttribute("action", /*@{/guestbook/list}*/'list')
+                // actionForm.setAttribute("method", "get")
+                // actionForm.submit()
+                location.href = /*[[@{/guestbook/list(page=${requestDTO.page},type=${requestDTO.type},
+            keyword=${requestDTO.keyword})}]]*/ 'url'
+            }
+
+            btnRemove.onclick = function(){
+                actionForm.setAttribute("action", /*@{/guestbook/remove}*/'remove')
+                actionForm.setAttribute("method", "post")
+                actionForm.submit()
+            }
+
+
+        </script>
+    </th:block>
