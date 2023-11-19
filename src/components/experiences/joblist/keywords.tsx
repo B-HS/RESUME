@@ -1,19 +1,19 @@
-import { Box, Flex, Heading, Stack, StackDivider, Text } from '@chakra-ui/react'
+import { Box, Flex, HStack, Heading, Stack, StackDivider, Text } from '@chakra-ui/react'
 const Keywords = () => {
     return (
         <Stack divider={<StackDivider />}>
             <Flex gap={3} flexDir={'column'} pt={7}>
-                <Flex alignItems={'baseline'} gap={2.5}>
+                <HStack alignItems={'baseline'} gap={2.5} flexWrap={'wrap'}>
                     <Heading fontSize={'2xl'}>Keywords Studios Tokyo</Heading>
                     <Heading fontSize={'md'}>LQA / QA</Heading>
                     <Text fontSize={'sm'}>2019. 07 ~ 2022. 01</Text>
-                </Flex>
+                </HStack>
             </Flex>
-            <Flex p={3.5}>
-                <Box w={'25%'}>
+            <HStack p={3.5} flexWrap={'wrap'} justifyContent={'space-between'}>
+                <Box>
                     <Text fontWeight={'bold'}>게임 테스팅 참여 및 출시</Text>
                 </Box>
-                <Box w={'75%'}>
+                <Box w={["'75%'", '100%', '75%', '75%', '75%']}>
                     <Stack>
                         <Flex flexDir={'column'} gap={1}>
                             <Text> • 브레이브리 디폴트 II(스위치/스팀), XLOG(CMS) </Text>
@@ -23,20 +23,24 @@ const Keywords = () => {
                         </Flex>
                     </Stack>
                 </Box>
-            </Flex>
-            <Flex p={3.5}>
-                <Box w={'25%'}>
+            </HStack>
+            <HStack p={3.5} flexWrap={'wrap'} justifyContent={'space-between'}>
+                <Box>
                     <Text fontWeight={'bold'}>게임 온고잉 테스트 참여</Text>
                 </Box>
-                <Box w={'75%'}>
+                <Box w={["'75%'", '100%', '75%', '75%', '75%']}>
                     <Stack>
                         <Flex flexDir={'column'} gap={1}>
-                            <Text> • FFBE</Text>
+                            <Text>
+                                •
+                                FFBE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </Text>
                             <Text> • FFBE WOTV</Text>
                         </Flex>
                     </Stack>
                 </Box>
-            </Flex>
+            </HStack>
         </Stack>
     )
 }

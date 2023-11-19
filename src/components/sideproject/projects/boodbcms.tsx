@@ -1,13 +1,13 @@
-import { Flex, Heading, Link, Stack, Text } from '@chakra-ui/react'
+import { Flex, HStack, Heading, Link, Stack, Text } from '@chakra-ui/react'
 const BoodBcms = () => {
     return (
         <Flex gap={3} flexDir={'column'}>
-            <Flex alignItems={'baseline'} gap={2.5}>
-                <Flex w={'50%'}>
-                    <Heading w={'30%'} fontSize={'2xl'}>
+            <HStack alignItems={'baseline'} gap={2.5} flexWrap={'wrap'}>
+                <HStack w={['100%', '100%', '100%', '49%', '49%', '49%']} flexWrap={'wrap'}>
+                    <Heading w={['100%', '100%', '100%', '30%', '30%']} fontSize={'2xl'}>
                         BOOD
                     </Heading>
-                    <Stack w={'70%'}>
+                    <Stack>
                         <Flex flexDir={'column'} gap={1}>
                             <Text> • Nextjs + Express + Prisma + TS</Text>
                             <Text> - 구내식당 식단표 web push 프로젝트</Text>
@@ -19,13 +19,13 @@ const BoodBcms = () => {
                             </Link>
                         </Flex>
                     </Stack>
-                </Flex>
-                <Flex w={'50%'}>
-                    <Heading w={'30%'} fontSize={'2xl'}>
+                </HStack>
+                <HStack w={['100%', '100%', '100%', '49%', '49%', '49%']} flexWrap={'wrap'}>
+                    <Heading w={['100%', '100%', '100%', '30%', '30%']} fontSize={'2xl'}>
                         B_CMS
                         <Heading fontSize={'sm'}>(진행 중)</Heading>
                     </Heading>
-                    <Stack w={'70%'}>
+                    <Stack>
                         <Flex flexDir={'column'} gap={1}>
                             <Text> • vue3 + Spring boot + TS </Text>
                             <Text> - B2B 플랫폼에서 자주 쓰이는 형태의 CMS 작성 </Text>
@@ -34,8 +34,8 @@ const BoodBcms = () => {
                             </Link>
                         </Flex>
                     </Stack>
-                </Flex>
-            </Flex>
+                </HStack>
+            </HStack>
         </Flex>
     )
 }

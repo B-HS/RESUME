@@ -1,13 +1,13 @@
-import { Flex, Heading, Link, Stack, Text } from '@chakra-ui/react'
+import { Flex, HStack, Heading, Link, Stack, Text } from '@chakra-ui/react'
 const BurrencyBookmarker = () => {
     return (
         <Flex gap={3} flexDir={'column'}>
-            <Flex alignItems={'baseline'} gap={2.5}>
-                <Flex w={'50%'}>
-                    <Heading w={'30%'} fontSize={'2xl'}>
+            <HStack alignItems={'baseline'} gap={2.5} flexWrap={'wrap'}>
+                <HStack w={['100%', '100%', '100%', '49%', '49%', '49%']} flexWrap={'wrap'}>
+                    <Heading w={['100%', '100%', '100%', '30%', '30%']} fontSize={'2xl'}>
                         Burrency
                     </Heading>
-                    <Stack w={'70%'}>
+                    <Stack>
                         <Flex flexDir={'column'} gap={1}>
                             <Text> • Electron + React + Nestjs + TS</Text>
                             <Text>- Nestjs 스케쥴링을 이용하여 환율 페이지 크롤링</Text>
@@ -16,13 +16,12 @@ const BurrencyBookmarker = () => {
                             </Link>
                         </Flex>
                     </Stack>
-                </Flex>
-                <Flex w={'50%'}>
-                    <Heading w={'30%'} fontSize={'2xl'}>
-                        네이버 웹툰
-                        <Heading fontSize={'2xl'}>북마커</Heading>
+                </HStack>
+                <HStack w={['100%', '100%', '100%', '49%', '49%', '49%']} flexWrap={'wrap'}>
+                    <Heading w={['100%', '100%', '100%', '30%', '30%']} fontSize={'2xl'}>
+                        웹툰 북마커
                     </Heading>
-                    <Stack w={'70%'}>
+                    <Stack>
                         <Flex flexDir={'column'} gap={1}>
                             <Text> • React + CRXJS + TS</Text>
                             <Text> - 네이버 웹툰 페이지 북마크 기능 </Text>
@@ -34,8 +33,8 @@ const BurrencyBookmarker = () => {
                             </Link>
                         </Flex>
                     </Stack>
-                </Flex>
-            </Flex>
+                </HStack>
+            </HStack>
         </Flex>
     )
 }

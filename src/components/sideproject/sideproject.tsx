@@ -1,4 +1,4 @@
-import { Box, Heading, Stack, StackDivider } from '@chakra-ui/react'
+import { Box, Heading, Stack } from '@chakra-ui/react'
 import BoodBcms from './projects/boodbcms'
 import BurrencyBookmarker from './projects/burrencyBookmarker'
 import GumyonetBblog from './projects/gumyonetBblog'
@@ -8,12 +8,10 @@ const Sideproject = () => {
             <Heading fontSize={'3xl'} mb={2}>
                 Side Project
             </Heading>
-            <Stack gap={7} p={2.5}>
-                <Stack divider={<StackDivider />}>
-                    <GumyonetBblog />
-                    <BurrencyBookmarker />
-                    <BoodBcms />
-                </Stack>
+            <Stack gap={[2, 2, 2, 7, 7, 7]} p={2.5}>
+                <GumyonetBblog />
+                <BurrencyBookmarker />
+                <BoodBcms />
             </Stack>
         </Box>
     )

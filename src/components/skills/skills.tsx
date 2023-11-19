@@ -1,6 +1,6 @@
 import { Box, Heading, Stack, StackDivider, Text } from '@chakra-ui/react'
-import DatabaseDevops from './list/databasedevops'
-import FrontBack from './list/frontback'
+
+import Stacks from './list/stacks'
 
 const Skills = () => {
     return (
@@ -13,8 +13,7 @@ const Skills = () => {
             </Heading>
             <Stack gap={7} p={2.5}>
                 <Stack divider={<StackDivider />}>
-                    <FrontBack />
-                    <DatabaseDevops />
+                    <Stacks />
                 </Stack>
             </Stack>
         </Box>
