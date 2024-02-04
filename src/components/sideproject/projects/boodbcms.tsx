@@ -3,7 +3,7 @@ const BoodBcms = () => {
     return (
         <Flex gap={3} flexDir={'column'}>
             <HStack alignItems={'baseline'} gap={2.5} flexWrap={'wrap'}>
-                <HStack w={['100%', '100%', '100%', '49%', '49%', '49%']} flexWrap={'wrap'}>
+                {/* <HStack w={['100%', '100%', '100%', '49%', '49%', '49%']} flexWrap={'wrap'}>
                     <Heading w={['100%', '100%', '100%', '30%', '30%']} fontSize={'2xl'}>
                         BOOD
                     </Heading>
@@ -19,12 +19,13 @@ const BoodBcms = () => {
                             </Link>
                         </Flex>
                     </Stack>
-                </HStack>
+                </HStack> */}
                 <HStack w={['100%', '100%', '100%', '49%', '49%', '49%']} flexWrap={'wrap'}>
                     <Heading w={['100%', '100%', '100%', '30%', '30%']} fontSize={'2xl'}>
                         B_CMS
-                        <Heading fontSize={'sm'}>(진행 중)</Heading>
+                        <Text fontSize={'sm'}>(진행 중)</Text>
                     </Heading>
+
                     <Stack>
                         <Flex flexDir={'column'} gap={1}>
                             <Text> • vue3 + Spring boot + TS </Text>

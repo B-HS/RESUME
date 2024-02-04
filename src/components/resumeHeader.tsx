@@ -7,7 +7,7 @@ const ResumeHeader = () => {
             <HStack divider={<StackDivider />} gap={3.5} wrap={'wrap'}>
                 <Text>HYUNSEOK BYUN</Text>
                 <Text>95.07.01 </Text>
-                <Text>일과 취미가 같은 개발자</Text>
+                <Text>반응형 백과사전을 지향하는 개발자</Text>
             </HStack>
         </Flex>
     )

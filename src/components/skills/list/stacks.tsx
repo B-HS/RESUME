@@ -5,7 +5,7 @@ const Stacks = () => {
         { name: 'Frontend', children: ['Typescript, Javascript', 'Vuejs, Reactjs, Svelte', 'Nextjs, Electron, Svelte Kit, CRXJS'] },
         { name: 'Backend', children: ['Java, Typescript', 'Spring boot, Express, Nestjs', 'MyBatis, Prisma, JPA, TypeORM'] },
         { name: 'Database', children: ['MariaDB, MySQL, Oralce, SQLite'] },
-        { name: 'DevOps', children: ['AWS Lightsail, Oracle cloud', 'RHEL9(Rockey linux 9), CentOS7, Ubuntu', 'Nginx, Docker, Wireguard'] },
+        { name: 'DevOps', children: ['AWS Lightsail, Oracle cloud', 'RHEL9(Rockey linux 9), Ubuntu, CentOS7', 'Nginx, Docker, Wireguard'] },
     ]
 
     return (
