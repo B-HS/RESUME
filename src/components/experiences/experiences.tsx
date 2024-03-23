@@ -1,6 +1,7 @@
 import { Box, Heading, Stack } from '@chakra-ui/react'
 import Keywords from './joblist/keywords'
 import Prosoft from './joblist/prosoft'
+import Codinghub from './joblist/codinghub'
 
 const Experiences = () => {
     return (
@@ -9,6 +10,7 @@ const Experiences = () => {
                 Experiences
             </Heading>
             <Stack p={2.5}>
+                <Codinghub />
                 <Prosoft />
                 <Keywords />
             </Stack>

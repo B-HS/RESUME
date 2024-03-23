@@ -5,14 +5,14 @@ const Prosoft = () => {
             <Flex gap={3} flexDir={'column'}>
                 <HStack alignItems={'baseline'} gap={2.5} flexWrap={'wrap'}>
                     <Heading fontSize={'2xl'}>프로소프트</Heading>
-                    <Heading fontSize={'md'}>Web developer</Heading>
-                    <Text fontSize={'sm'}>2023. 02 ~ </Text>
+                    <Heading fontSize={'md'}>Fullstack developer</Heading>
+                    <Text fontSize={'sm'}>2023. 02 ~ 2024. 02 </Text>
                 </HStack>
             </Flex>
             <HStack p={3.5} flexWrap={'wrap'} justifyContent={'space-between'}>
                 <Box>
                     <Text fontWeight={'bold'}>자사 프레임워크 고도화</Text>
-                    <Text color={'gray.500'}>2023.09 ~</Text>
+                    <Text color={'gray.500'}>2023.09 ~ 2023. 02</Text>
                 </Box>
                 <Box w={['75%', '100%', '75%', '75%', '75%']}>
                     <Stack>
