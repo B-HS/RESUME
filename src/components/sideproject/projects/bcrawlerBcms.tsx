@@ -1,29 +1,25 @@
 import { Flex, HStack, Heading, Link, Stack, Text } from '@chakra-ui/react'
-const BoodBcms = () => {
+const BCrawlerBcms = () => {
     return (
         <Flex gap={3} flexDir={'column'}>
             <HStack alignItems={'baseline'} gap={2.5} flexWrap={'wrap'}>
-                {/* <HStack w={['100%', '100%', '100%', '49%', '49%', '49%']} flexWrap={'wrap'}>
+                <HStack w={['100%', '100%', '100%', '49%', '49%', '49%']} flexWrap={'wrap'}>
                     <Heading w={['100%', '100%', '100%', '30%', '30%']} fontSize={'2xl'}>
-                        BOOD
+                        BCrawler
                     </Heading>
                     <Stack>
                         <Flex flexDir={'column'} gap={1}>
-                            <Text> • Nextjs + Express + Prisma + TS</Text>
-                            <Text> - 구내식당 식단표 web push 프로젝트</Text>
-                            <Link color={'blue.600'} href='https://github.com/B-HS/BOOD'>
-                                📌 https://github.com/B-HS/BOOD
-                            </Link>
-                            <Link color={'blue.600'} href='https://food.gumyo.net'>
-                                📌 https://food.gumyo.net
+                            <Text> • Nextjs + Prisma + TS</Text>
+                            <Text> - 종합 핫딜 사이트</Text>
+                            <Link color={'blue.600'} href='https://hot.gumyo.net/'>
+                                📌 BCrawler 사이트
                             </Link>
                         </Flex>
                     </Stack>
-                </HStack> */}
+                </HStack>
                 <HStack w={['100%', '100%', '100%', '49%', '49%', '49%']} flexWrap={'wrap'}>
                     <Heading w={['100%', '100%', '100%', '30%', '30%']} fontSize={'2xl'}>
                         B_CMS
-                        <Text fontSize={'sm'}>(진행 중)</Text>
                     </Heading>
 
                     <Stack>
@@ -40,4 +36,4 @@ const BoodBcms = () => {
         </Flex>
     )
 }
-export default BoodBcms
+export default BCrawlerBcms
