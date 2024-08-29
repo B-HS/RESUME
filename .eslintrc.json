@@ -1,34 +1,54 @@
 {
-  "root": true,
-  "extends": [
-    "next",
-    "prettier"
-  ],
-  "parserOptions": {
-    "sourceType": "module",
-    "ecmaVersion": 2020
-  },
-  "rules": {
-    "no-var": 2,
-    "func-style": [
-      2,
-      "declaration",
-      {
-        "allowArrowFunctions": true
-      }
+    "extends": [
+        "next",
+        "next/core-web-vitals",
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:import/typescript",
+        "plugin:prettier/recommended",
+        "prettier"
     ],
-    "no-unused-vars": [
-      2,
-      {
-        "ignoreRestSiblings": true,
-        "argsIgnorePattern": "^_",
-        "caughtErrors": "all"
-      }
-    ],
-    "prefer-const": 2,
-    "strict": [
-      2,
-      "global"
-    ]
-  }
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest"
+    },
+    "plugins": ["react", "import", "prettier"],
+    "rules": {
+        "react/prop-types": "off",
+        "react/react-in-jsx-scope": "off",
+        "no-unused-vars": "warn",
+        "no-console": "off",
+        "prettier/prettier": "warn",
+        "import/order": "off"
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            },
+            "alias": {
+                "map": [
+                    ["@app", "./app"],
+                    ["@pages", "./pages"],
+                    ["@widgets", "./widgets"],
+                    ["@features", "./features"],
+                    ["@entities", "./entities"],
+                    ["@shared", "./shared"]
+                ],
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+        },
+        "react": {
+            "version": "detect"
+        }
+    }
 }
