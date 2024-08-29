@@ -8,7 +8,7 @@ export const ContractWidget = () => {
     return (
         <Fragment>
             <section className='relative size-64 overflow-hidden rounded mt-7 border-2'>
-                <Image width={256} height={256} className='scale-[101%] object-fill' alt='Profile Image' src={imageUrl} priority={true} />
+                <img width={256} height={256} className='scale-[101%] object-fill' alt='Profile Image' src={imageUrl} />
             </section>
             <SectionHeader title='Contract'>
                 <Links links={emailLinks} />
