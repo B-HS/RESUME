@@ -24,7 +24,7 @@ const Badges = ({ items }: { items: string[] }) => {
             {items.map((item, idx) => (
                 <Badge
                     variant='default'
-                    className={cn('rounded-sm !font-bold px-1.5')}
+                    className={cn('rounded-sm !font-bold px-1.5 text-white')}
                     key={item}
                     style={{
                         backgroundColor: `hsl(0, 0%, ${calculatePercentage(idx, items.length)}%)`,

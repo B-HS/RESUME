@@ -1,7 +1,6 @@
 import { SectionHeader } from '@features/common/section'
 import { Links } from '@features/contract'
 import { blogLinks, emailLinks, githubLinks, imageUrl, toyLinks } from '@shared/constant'
-import Image from 'next/image'
 import { Fragment } from 'react'
 
 export const ContractWidget = () => {
