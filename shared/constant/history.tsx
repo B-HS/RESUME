@@ -7,32 +7,33 @@ export const history = {
         job: 'Frontend developer',
         working: '2024. 03 ~',
         history: {
+            flunti: {
+                title: 'flunti.io 서비스 개발 및 고도화',
+                duration: '2024.03 ~',
+                description: [
+                    '공통 레이아웃 작성 및 페이지 제작',
+                    '재사용을 위해 모달, 버튼, 아코디언 등 공통 컴포넌트 설계 및 작성',
+                    '유지보수 속도 향상을 위해 프로젝트 아키텍쳐 변환(FSD) 및 Storybook 도입',
+                    '서버사이드의 에러 추적을 위한 HyperDX 도입',
+                ],
+            },
             otherCompany: {
                 title: '타사 홈페이지 개발',
                 duration: '2024. 07',
                 description: [
                     '프로젝트 구조, 공통 레이아웃 설계 및 작성',
                     '지원서 페이지를위한 어드민 페이지 설계 및 작성',
-                    'prisma + sqlite를 이용한 api 설계 및 작성',
-                ],
-            },
-            flunti: {
-                title: 'flunti.io 서비스 개발 및 고도화',
-                duration: '2024.03 ~',
-                description: [
-                    '공통 레이아웃 작성 및 페이지 제작',
-                    '모달, 버튼, 아코디언 등 공통 컴포넌트 설계 및 작성',
-                    '프로젝트 아키텍쳐 변환(FSD) 및 Storybook 도입',
-                    '에러 추적을 위한 HyperDX 도입',
+                    'Prisma + Sqlite를 이용한 api 설계 및 작성',
                 ],
             },
             lms: {
                 title: 'LMS 개발',
                 duration: '2024.05 ~ 2024.06',
                 description: [
+                    '한정적 시간에 따라 빠른 개발을 위한 shadcn도입',
                     '프로젝트 구조, 공통 레이아웃 설계 및 작성',
                     'ReactPlayer를 이용한 플레이어 설계 및 작성',
-                    '그리드용 공통 테이블 컴포넌트 설계 및 작성',
+                    'Tanstack table을 이용하여 범용 테이블 컴포넌트 설계 및 작성',
                     '일부 컴포넌트 예시를 위한 Storybook 작성',
                     '공통 Fetching API함수 설계 및 작성',
                 ],

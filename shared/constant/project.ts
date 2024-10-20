@@ -1,10 +1,15 @@
-
 export const projects = [
     {
         name: 'BBlog',
-        stack: ['Nextjs', 'Supabase', ' MDX', 'TypeScript'],
+        stack: ['Nextjs', 'TypeScript', 'Drizzle', 'AWS Cognito'],
         description: '개인 블로그',
         link: { label: '개인 블로그 사이트', link: 'https://blog.gumyo.net' },
+    },
+    {
+        name: 'template',
+        stack: ['Nextjs', 'TypeScript'],
+        description: '자주 쓰이는 기술들을 모아둔 템플릿 사이트',
+        link: { label: '템플릿 사이트', link: 'https://github.com/B-HS/template' },
     },
     {
         name: 'BeAlert',
