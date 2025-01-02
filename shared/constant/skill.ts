@@ -1,13 +1,13 @@
 export const skills = {
     Frontend: {
         'Languages': ['Typescript | Javascript'],
-        'Frameworks': ['Reactjs', 'Vuejs', 'Svelte'],
-        'Libraries/Tools': ['Nextjs', 'Electron', 'Svelte Kit', 'CRXJS'],
+        'Frameworks': ['Nextjs', 'Vuejs', 'SvelteKit'],
+        'Libraries/Tools': ['Reactjs', 'Bun', 'Electron', 'Svelte Kit'],
     },
     Backend: {
         Languages: ['Typescript', 'Java'],
         Frameworks: ['Hono', 'Express', 'Spring Boot', 'Nestjs'],
-        ORMs: ['Prisma', 'Drizzle', 'MyBatis', 'JPA', 'TypeORM'],
+        ORMs: ['Drizzle', 'Prisma', 'MyBatis', 'JPA', 'TypeORM'],
     },
     Database: {
         DB: ['MariaDB', 'MySQL', 'SQLite', 'Oracle'],

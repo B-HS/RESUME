@@ -3,7 +3,7 @@ import { Fragment } from 'react'
 export const history = {
     codinghub: {
         title: '한국글로벌널리지네트웍(주)',
-        subtitle: '前 코딩허브, 인수 합병',
+        subtitle: '前 코딩허브, 現 Trainocate Korea, 흡수 합병',
         job: 'Frontend developer',
         working: '2024. 03 ~',
         history: {

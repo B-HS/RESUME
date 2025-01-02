@@ -6,31 +6,25 @@ export const projects = [
         link: { label: '개인 블로그 사이트', link: 'https://blog.gumyo.net' },
     },
     {
-        name: 'template',
-        stack: ['Nextjs', 'TypeScript'],
-        description: '자주 쓰이는 기술들을 모아둔 템플릿 사이트',
-        link: { label: '템플릿 사이트', link: 'https://github.com/B-HS/template' },
-    },
-    {
         name: 'BeAlert',
         stack: ['Nextjs', 'FastAPI', 'TypeScript', 'PWA'],
         description: '재난경보 Push Notification 앱',
         link: { label: 'BeAlert 사이트', link: 'https://alert.gumyo.net' },
     },
     {
-        name: 'Burrency',
-        stack: ['Electron', 'React', 'Nestjs', 'TypeScript'],
-        description: '크롤링을 통한 환율 모니터 앱',
-        link: { label: 'https://github.com/B-HS/Burrency', link: 'https://github.com/B-HS/Burrency' },
-    },
-    {
         name: '웹툰 북마커',
-        stack: ['React', 'TypeScript', 'CRXJS'],
+        stack: ['React', 'TypeScript', 'Bun'],
         description: '네이버 웹툰 페이지 북마크 앱',
         link: {
             label: '네이버 웹툭 북마커 크롬스토어 페이지',
             link: 'https://chromewebstore.google.com/detail/네이버-웹툰-북마크/cnfglfaobnkgkcnagfbaeilbpkcjcanh',
         },
+    },
+    {
+        name: 'Burrency',
+        stack: ['Electron', 'React', 'Honojs', 'Vite', 'TypeScript'],
+        description: '크롤링을 통한 환율 모니터 앱',
+        link: { label: 'https://github.com/B-HS/Burrency', link: 'https://github.com/B-HS/Burrency' },
     },
     {
         name: 'BCrawler',
@@ -49,5 +43,11 @@ export const projects = [
         stack: ['Nextjs', 'TypeScript'],
         description: '뱃지 아이콘 이미지 생성 사이트',
         link: { label: 'BIcon 사이트', link: 'https://bicon.gumyo.net' },
+    },
+    {
+        name: 'template',
+        stack: ['Nextjs', 'TypeScript'],
+        description: '자주 쓰이는 기술들을 모아둔 템플릿 사이트',
+        link: { label: '템플릿 사이트', link: 'https://github.com/B-HS/template' },
     },
 ]
