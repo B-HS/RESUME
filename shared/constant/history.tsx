@@ -15,6 +15,22 @@ export const history = {
                     '재사용을 위해 모달, 버튼, 아코디언 등 공통 컴포넌트 설계 및 작성',
                     '유지보수 속도 향상을 위해 프로젝트 아키텍쳐 변환(FSD) 및 Storybook 도입',
                     '서버사이드의 에러 추적을 위한 HyperDX 도입',
+                    '대규모 라이브를 위한 Z사 화상 회의 서비스 연동',
+                    '어드민페이지 사용자 요청에 의해 Tiptap 플러그인을 제작하여 notion-like 에디터 구현 및 적용',
+                ],
+            },
+            B2BPage: {
+                title: (
+                    <Fragment>
+                        <p>B2B그룹 사용자를 위한</p>
+                        <p>홈페이지 개발 및 유지보수</p>
+                    </Fragment>
+                ),
+                duration: '2024. 11 ~ 2024. 12',
+                description: [
+                    '동시성 및 효율적인 트래픽 관리를 위하여 react-query도입',
+                    'Radix-UI를 통한 공통 컴포넌트 설계 및 구현',
+                    '관리를 위한 어드민 페이지 / 운영자 페이지 작성',
                 ],
             },
             otherCompany: {

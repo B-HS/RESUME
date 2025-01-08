@@ -4,7 +4,7 @@ import { projects } from '@shared/constant'
 export const SideProjectWidget = () => {
     return (
         <SectionHeader title='Side Projects'>
-            <section className='flex flex-wrap justify-between gap-3'>
+            <section className='flex flex-wrap justify-start gap-3'>
                 {projects.map((project) => (
                     <SectionProjectElement key={project.name} {...project} />
                 ))}

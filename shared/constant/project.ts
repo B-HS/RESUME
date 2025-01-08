@@ -33,10 +33,10 @@ export const projects = [
         link: { label: 'BCrawler 사이트', link: 'https://hot.gumyo.net/' },
     },
     {
-        name: 'B_CMS',
-        stack: ['vue3', 'Spring Boot', 'TypeScript'],
-        description: 'B2B에서 자주 쓰이는 템플릿 작성',
-        link: { label: 'https://github.com/B-HS/B_CMS', link: 'https://github.com/B-HS/B_CMS' },
+        name: 'template',
+        stack: ['Nextjs', 'TypeScript'],
+        description: '자주 쓰이는 기술들을 모아둔 템플릿 사이트',
+        link: { label: '템플릿 사이트', link: 'https://github.com/B-HS/template' },
     },
     {
         name: 'BIcon',
@@ -45,9 +45,9 @@ export const projects = [
         link: { label: 'BIcon 사이트', link: 'https://bicon.gumyo.net' },
     },
     {
-        name: 'template',
-        stack: ['Nextjs', 'TypeScript'],
-        description: '자주 쓰이는 기술들을 모아둔 템플릿 사이트',
-        link: { label: '템플릿 사이트', link: 'https://github.com/B-HS/template' },
+        name: 'B_CMS',
+        stack: ['vue3', 'Spring Boot', 'TypeScript'],
+        description: 'B2B에서 자주 쓰이는 템플릿 작성',
+        link: { label: 'https://github.com/B-HS/B_CMS', link: 'https://github.com/B-HS/B_CMS' },
     },
 ]
