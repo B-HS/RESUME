@@ -7,7 +7,8 @@ export const ContractWidget = () => {
     return (
         <Fragment>
             <section className='relative size-64 overflow-hidden rounded mt-7 border-2'>
-                <img width={256} height={256} className='scale-[101%] object-fill' alt='Profile Image' src={imageUrl} />
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img width={256} height={256} className='object-fill' alt='Profile Image' src={imageUrl} />
             </section>
             <SectionHeader title='Contract'>
                 <Links links={emailLinks} />

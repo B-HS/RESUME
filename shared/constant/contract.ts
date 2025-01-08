@@ -1,4 +1,4 @@
-export const imageUrl = 'https://img.gumyo.net/profile.png'
+export const imageUrl = 'https://blog.gumyo.net/api/image/1616ad3e-8523-4dd1-8b72-95e621c330a0.webp'
 export const emailLinks = [
     { title: 'Email', url: 'mailto:hs@gumyo.net', displayText: 'hs@gumyo.net' },
     { url: 'mailto:gumyoincirno@gmail.com', displayText: 'gumyoincirno@gmail.com' },
