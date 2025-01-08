@@ -18,6 +18,7 @@ export const history = {
                     '대규모 라이브를 위한 Z사 화상 회의 서비스 연동',
                     '어드민페이지 사용자 요청에 의해 Tiptap 플러그인을 제작하여 notion-like 에디터 구현 및 적용',
                 ],
+                stacks: ['Nextjs', 'TypeScript', 'Tailwindcss', 'Radix-UI', 'React-Query', 'HyperDX', 'Tiptap', 'Framer-Motion'],
             },
             B2BPage: {
                 title: (
@@ -32,6 +33,7 @@ export const history = {
                     'Radix-UI를 통한 공통 컴포넌트 설계 및 구현',
                     '관리를 위한 어드민 페이지 / 운영자 페이지 작성',
                 ],
+                stacks: ['Reactjs', 'vite', 'TypeScript', 'Radix-UI', 'React-Query', 'Tailwindcss'],
             },
             codetest: {
                 title: '코드 알고리즘 테스트 사이트 구현',
@@ -42,6 +44,7 @@ export const history = {
                     '웹 IDE 구현을 위하여 code mirror도입',
                     '코드 관리를 위하여 어드민 페이지 작성 및 구현',
                 ],
+                stacks: ['Reactjs', 'vite', 'TypeScript', 'Tailwindcss', 'SWR', 'CodeMirror'],
             },
             otherCompany: {
                 title: '타사 홈페이지 개발',
@@ -51,6 +54,7 @@ export const history = {
                     '지원서 페이지를위한 어드민 페이지 설계 및 작성',
                     'Prisma + Sqlite를 이용한 api 설계 및 작성',
                 ],
+                stacks: ['Nextjs', 'TypeScript', 'Tailwindcss', 'Prisma', 'Sqlite', 'shadcn/ui'],
             },
             lms: {
                 title: 'LMS 개발',
@@ -63,6 +67,7 @@ export const history = {
                     '일부 컴포넌트 예시를 위한 Storybook 작성',
                     '공통 Fetching API함수 설계 및 작성',
                 ],
+                stacks: ['Nextjs', 'TypeScript', 'Tailwindcss', 'shadcn/ui', 'ReactPlayer', 'Tanstack-Table/Query', 'Storybook'],
             },
         },
     },
@@ -84,6 +89,19 @@ export const history = {
                     'express + vue를 활용하여 모듈 난독화 + 데모 파일 배포 페이지 설계/구현',
                     'vitepress를 이용한 공통함수 분류 및 각 함수별 설명, 사용법 도큐먼트 작성',
                 ],
+                stacks: [
+                    'Vue3',
+                    'Typescript',
+                    'Spring Boot',
+                    'Fabric.js',
+                    'Vitepress',
+                    'chart.js',
+                    'express',
+                    'vite',
+                    'Node mailer',
+                    'MyBatis',
+                    'Ant Design',
+                ],
             },
             solutionBuild: {
                 title: (
@@ -102,11 +120,13 @@ export const history = {
                     '서버사이드 라우팅, 서버사이드 i18n',
                     '엑셀 파일 관련 기능(읽기/업로드 등) 등',
                 ],
+                stacks: ['Vue3', 'Typescript', 'Spring Boot', 'Vite', 'Ant Design', 'MyBatis'],
             },
             dbConvert: {
                 title: 'DB 변환 작업',
                 duration: '2023.03 ~ 2023.04',
                 description: ['기존 오라클 기준 문법으로 작성된 Mapper를 ANSI 표준 SQL문으로 변환'],
+                stacks: ['MyBatis', 'Oracle', 'MariaDB', 'Spring Boot'],
             },
             solutionSm: {
                 title: (
@@ -117,6 +137,7 @@ export const history = {
                 ),
                 duration: '2023.02 ~ 2024.01',
                 description: ['Vue2 + Spring boot로 작성된 프로젝트의 유지보수 및 기능 추가'],
+                stacks: ['Vue2', 'Spring Boot', 'MyBatis', 'Ant Design'],
             },
         },
     },
