@@ -33,6 +33,16 @@ export const history = {
                     '관리를 위한 어드민 페이지 / 운영자 페이지 작성',
                 ],
             },
+            codetest: {
+                title: '코드 알고리즘 테스트 사이트 구현',
+                duration: '2024. 09 ~ 2024. 10',
+                description: [
+                    'MVP단계의 코드 알고리즘 테스트 사이트 구현',
+                    '효율적인 캐싱을 위하여 시범적으로 SWR도입 및 사용',
+                    '웹 IDE 구현을 위하여 code mirror도입',
+                    '코드 관리를 위하여 어드민 페이지 작성 및 구현',
+                ],
+            },
             otherCompany: {
                 title: '타사 홈페이지 개발',
                 duration: '2024. 07',
