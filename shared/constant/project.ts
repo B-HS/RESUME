@@ -50,4 +50,10 @@ export const projects = [
         description: 'B2B에서 자주 쓰이는 템플릿 작성',
         link: { label: 'https://github.com/B-HS/B_CMS', link: 'https://github.com/B-HS/B_CMS' },
     },
+    {
+        name: 'RESUME',
+        stack: ['Nextjs', 'TypeScript'],
+        description: '현재 이력서 사이트',
+        link: { label: 'RESUME 깃허브', link: 'https://github.com/B-HS/RESUME' },
+    }
 ]

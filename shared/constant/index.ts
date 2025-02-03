@@ -1,4 +1,5 @@
 export * from './contract'
+export { educationAndEtc } from './education'
 export { history } from './history'
 export { projects } from './project'
 export { skills } from './skill'

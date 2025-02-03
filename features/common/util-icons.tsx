@@ -21,18 +21,18 @@ const UtilIconsComponent = () => {
         <section className='flex flex-col gap-2 fixed bottom-7 right-7 items-end'>
             {theme === 'dark' ? (
                 <MoonStar
-                    className={buttonVariants({ variant: 'secondary', size: 'icon', className: 'p-2 cursor-pointer' })}
+                    className={buttonVariants({ variant: 'secondary', size: 'icon', className: 'p-2 cursor-pointer border opacity-80' })}
                     onClick={() => setTheme('light')}
                 />
             ) : (
                 <SunDim
-                    className={buttonVariants({ variant: 'secondary', size: 'icon', className: 'p-2 cursor-pointer' })}
+                    className={buttonVariants({ variant: 'secondary', size: 'icon', className: 'p-2 cursor-pointer border opacity-80' })}
                     onClick={() => setTheme('dark')}
                 />
             )}
             {!isTop && (
                 <Button
-                    className={buttonVariants({ variant: 'secondary', size: 'icon', className: 'p-2 cursor-pointer' })}
+                    className={buttonVariants({ variant: 'secondary', size: 'icon', className: 'p-2 cursor-pointer border opacity-80' })}
                     onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                     <ArrowUp />
                 </Button>
