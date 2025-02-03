@@ -143,7 +143,7 @@ export const history = {
                     {
                         detail: 'Tanstack table을 이용하여 범용 테이블 컴포넌트 설계 및 작성',
                         explaination:
-                            '디자이너분이 내려주시는 디자인 시안, 그리고 사용되는 기능 자체는 명확하였습니다.  이에따라 자주 구현되어 쓰이는 기능들 (Pagination, Header/Rows, )',
+                            '디자이너분이 내려주시는 디자인 시안, 그리고 사용되는 기능 자체는 명확하였습니다.  이에따라 자주 구현되어 쓰이는 기능들 (Pagination, Header/Rows 등)을 단지 Column, Data만 정의하면 사용할 수 있는 컴포넌트를 작성하였습니다.',
                     },
                     {
                         detail: '일부 컴포넌트 예시를 위한 Storybook 작성',
