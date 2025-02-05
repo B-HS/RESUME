@@ -1,5 +1,5 @@
 import { Badge } from '@shared/ui/badge'
-import { Dot, Pencil } from 'lucide-react'
+import { Dot } from 'lucide-react'
 import { Fragment, ReactNode } from 'react'
 
 export const SectionHistoryElement = ({

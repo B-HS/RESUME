@@ -55,5 +55,5 @@ export const projects = [
         stack: ['Nextjs', 'TypeScript'],
         description: '현재 이력서 사이트',
         link: { label: 'RESUME 깃허브', link: 'https://github.com/B-HS/RESUME' },
-    }
+    },
 ]
