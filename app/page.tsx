@@ -9,20 +9,22 @@ const Page = () => {
     const subTitles = ['HYUNSEOK BYUN', '95.07.01', '반응형 백과사전을 지향하는 개발자']
     return (
         <Fragment>
-            <SiteHeader name='변현석' subTitles={subTitles} />
+            <SiteHeader name='Hyunseok Byun' subTitles={subTitles} />
             <section className='max-w-screen-2xl size-full mx-auto'>
-                <ContractWidget />
-                <Separator />
-                <IntroduceWidget introduce={introduces} />
-                <Separator />
-                <ExperiencesWidget histories={history} />
-                <Separator />
-                <SideProjectWidget projects={projects} />
-                <Separator />
-                <SkillsWidget skills={skills} />
-                <Separator />
-                <EducationWidget educations={educationAndEtc} />
-                <UtilIcons />
+                <section className='flex flex-col gap-5 relative'>
+                    <ContractWidget />
+                    <Separator />
+                    <IntroduceWidget introduce={introduces} />
+                    <Separator />
+                    <ExperiencesWidget histories={history} />
+                    <Separator />
+                    <SideProjectWidget projects={projects} />
+                    <Separator />
+                    <SkillsWidget skills={skills} />
+                    <Separator />
+                    <EducationWidget educations={educationAndEtc} />
+                    <UtilIcons />
+                </section>
             </section>
         </Fragment>
     )
