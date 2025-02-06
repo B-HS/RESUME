@@ -20,7 +20,7 @@ export const SectionHistoryElement = ({
                 <span className='font-semibold text-foreground/70'>{duration}</span>
                 <section className='flex flex-wrap gap-2'>
                     {stacks?.map((stacks, idx) => (
-                        <Badge variant={'secondary'} className='rounded-sm !font-bold px-1' key={idx}>
+                        <Badge variant={'secondary'} className='rounded-sm font-bold! px-1' key={idx}>
                             {stacks}
                         </Badge>
                     ))}

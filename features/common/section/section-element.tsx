@@ -6,7 +6,7 @@ export const SectionElement = ({ title, children }: { title?: string; children?:
             <section className='flex items-start gap-1 min-w-20 justify-start text-xl'>
                 <span className='font-semibold'>{title}</span>
             </section>
-            <div className='[&_*]:transition-all min-w-64'>{children}</div>
+            <div className='**:transition-all min-w-64'>{children}</div>
         </section>
     )
 }

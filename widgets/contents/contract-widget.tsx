@@ -5,7 +5,7 @@ import { Gamepad2, Github, Mail, Newspaper } from 'lucide-react'
 export const ContractWidget = () => {
     return (
         <section className='flex items-center justify-center gap-8 w-full flex-wrap pt-10 pb-5'>
-            <section className='relative size-52 rounded-md overflow-hidden flex-shrink-0'>
+            <section className='relative size-52 rounded-md overflow-hidden shrink-0'>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img width={208} height={208} className='object-cover' alt='Profile Image' src={imageUrl} />
             </section>

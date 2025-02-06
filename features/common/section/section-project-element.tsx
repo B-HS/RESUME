@@ -18,7 +18,7 @@ export const SectionProjectElement = ({ description, link, name, stack }: (typeo
                 </ul>
                 <section className='flex gap-1'>
                     {stack.map((st) => (
-                        <Badge variant={'secondary'} className='rounded-sm !font-bold px-1' key={st}>
+                        <Badge variant={'secondary'} className='rounded-sm font-bold! px-1' key={st}>
                             {st}
                         </Badge>
                     ))}
