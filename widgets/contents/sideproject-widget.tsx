@@ -1,7 +1,7 @@
 import { SectionHeader, SectionProjectElement } from '@features/common/section'
-import { projects } from '@shared/constant'
+import { type projects as projectList } from '@shared/constant'
 
-export const SideProjectWidget = () => {
+export const SideProjectWidget = ({ projects }: { projects: typeof projectList }) => {
     return (
         <SectionHeader title='Side Projects'>
             <section className='flex flex-wrap justify-start gap-3'>

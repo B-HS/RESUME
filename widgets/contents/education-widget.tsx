@@ -1,13 +1,13 @@
 import { SectionHeader } from '@features/common/section'
-import { educationAndEtc } from '@shared/constant'
+import { type educationAndEtc } from '@shared/constant'
 
-export const EducationWidget = () => {
+export const EducationWidget = ({ educations }: { educations: typeof educationAndEtc }) => {
     return (
         <SectionHeader title='Education / etc.'>
             <section className='flex flex-col gap-2'>
-                {educationAndEtc.map((item, index) => (
-                    <section className='flex gap-1' key={index}>
-                        <span className='font-semibold w-32 text-lg'>{item.duration}</span>
+                {educations.map((item, index) => (
+                    <section className='flex gap-1 flex-wrap' key={index}>
+                        <span className='font-semibold min-w-52 text-lg'>{item.duration}</span>
                         <ul>
                             <li className='list-inside list-disc'>{item.description}</li>
                         </ul>

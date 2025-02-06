@@ -1,5 +1,4 @@
 import { SectionHeader } from '@features/common/section'
-import { skills } from '@shared/constant'
 import { Badge } from '@shared/ui/badge'
 import { cn } from '@shared/utils'
 import { Fragment } from 'react'
@@ -54,9 +53,9 @@ const Category = ({ category, items }: { category: string; items: { [title: stri
     )
 }
 
-export const SkillsWidget = () => {
+export const SkillsWidget = ({ skills, subtitle = '- 거쳐온 기술들 및 숙련도 순으로 나열됩니다' }: { skills: Skills; subtitle?: string }) => {
     return (
-        <SectionHeader title='Skills' subtitle='- 거쳐온 기술들 및 숙련도 순으로 나열됩니다'>
+        <SectionHeader title='Skills' subtitle={subtitle}>
             {Object.entries(skills as Skills).map(([category, items]) => (
                 <Category key={category} category={category} items={items} />
             ))}

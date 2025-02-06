@@ -1,3 +1,4 @@
+export { ProfileLinkElement } from './profile-link-element'
 export { SectionElement } from './section-element'
 export { SectionHeader } from './section-header'
 export { SectionHistoryElement } from './section-history-element'

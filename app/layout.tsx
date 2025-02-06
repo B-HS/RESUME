@@ -1,5 +1,4 @@
 import { cn } from '@shared/utils'
-import { SiteHeader } from '@widgets/header'
 import { ThemeProvider } from '@widgets/provider'
 import { M_PLUS_Rounded_1c } from 'next/font/google'
 import { FC, ReactNode } from 'react'
@@ -44,8 +43,7 @@ const RootLayout: FC<{ children: ReactNode }> = ({ children }) => {
                     fontRound.variable,
                 )}>
                 <ThemeProvider attribute='class' defaultTheme='light' enableSystem disableTransitionOnChange>
-                    <SiteHeader />
-                    <section className='max-w-screen-2xl size-full mx-auto'>{children}</section>
+                    {children}
                 </ThemeProvider>
             </body>
         </html>
