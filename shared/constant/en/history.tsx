@@ -158,7 +158,7 @@ export const history = {
         working: 'February 2023 ~ February 2024',
         history: {
             solution: {
-                title: 'Enhancing In-House Framework',
+                title: 'Enhancing In-House Solution Framework',
                 duration: 'September 2023 ~ February 2024',
                 description: [
                     {
@@ -193,6 +193,41 @@ export const history = {
                     'MyBatis',
                     'Ant Design',
                 ],
+            },
+        },
+    },
+    keywordsstudios: {
+        title: 'Keywords Studios',
+        job: 'LQA Tester',
+        working: 'July 2019 ~ Jan 2022 (6month remote work in Aug 2021 - Jan 2022)',
+        history: {
+            lqa: {
+                title: 'Localization Quality Assurance Tester',
+                duration: 'July 2019 ~ Jan 2022',
+                description: [
+                    {
+                        detail: 'Checking game localization quality',
+                        explaination:
+                            'Checked the quality of game localization in various languages, including Korean, English, and Japanese and share issues with global team/developers on JIRA.',
+                    },
+                    {
+                        detail: 'Game testing',
+                        explaination: 'Tested games on various platforms, including PC, console, and mobile, and reported bugs on JIRA.',
+                    },
+                ],
+                stacks: ['JIRA', 'Confluence', 'Microsoft Office', 'Excel'],
+            },
+            testedgames: {
+                title: 'Tested Games',
+                duration: 'July 2019 ~ Jan 2022',
+                description: [
+                    {
+                        detail: 'Tested and published game builds, maintained game quality',
+                        explaination:
+                            'Bravely Default II, XLOG(In-house CMS soultion), Nier Re[in]carnation, FFBE WOTV, FFBE, Catlevania Grimoire of Souls, etc.',
+                    },
+                ],
+                stacks: ['Nintendo Switch', 'iOS', 'Android', 'PC', 'PS4', 'Xbox'],
             },
         },
     },

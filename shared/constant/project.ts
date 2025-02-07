@@ -9,7 +9,7 @@ export const projects = [
         name: 'BeAlert',
         stack: ['Nextjs', 'FastAPI', 'TypeScript', 'PWA'],
         description: '재난경보 Push Notification 앱',
-        link: { label: 'BeAlert 사이트', link: 'https://alert.gumyo.net' },
+        link: { label: 'BeAlert 사이트', link: 'https://alert.hyns.dev' },
     },
     {
         name: '웹툰 북마커',
