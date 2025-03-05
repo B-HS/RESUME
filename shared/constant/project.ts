@@ -6,12 +6,6 @@ export const projects = [
         link: { label: '개인 블로그 사이트', link: 'https://blog.gumyo.net' },
     },
     {
-        name: 'BeAlert',
-        stack: ['Nextjs', 'FastAPI', 'TypeScript', 'PWA'],
-        description: '재난경보 Push Notification 앱',
-        link: { label: 'BeAlert 사이트', link: 'https://alert.hyns.dev' },
-    },
-    {
         name: '웹툰 북마커',
         stack: ['React', 'TypeScript', 'Bun'],
         description: '네이버 웹툰 페이지 북마크 앱',
@@ -31,6 +25,12 @@ export const projects = [
         stack: ['Nextjs', 'Prisma', 'TypeScript'],
         description: '핫딜 종합 크롤링 사이트',
         link: { label: 'BCrawler 사이트', link: 'https://hot.gumyo.net/' },
+    },
+    {
+        name: 'BeAlert',
+        stack: ['Nextjs', 'FastAPI', 'TypeScript', 'PWA'],
+        description: '재난경보 Push Notification 앱',
+        link: { label: 'https://github.com/B-HS/BeAlert', link: 'https://github.com/B-HS/BeAlert' },
     },
     {
         name: 'template',

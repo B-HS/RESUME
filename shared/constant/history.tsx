@@ -3,10 +3,32 @@ import { Fragment } from 'react'
 export const history = {
     codinghub: {
         title: '한국글로벌널리지네트웍(주)',
-        subtitle: '前 코딩허브, 現 Trainocate Korea, 흡수 합병',
+        subtitle: '前 코딩허브, 現 Trainocate Korea, 고용 인계',
         job: 'Frontend developer',
         working: '2024. 03 ~',
         history: {
+            designsystem: {
+                title: '디자인 시스템 구축',
+                duration: '2025. 02 ~',
+                description: [
+                    {
+                        detail: '파일 시스템을 기반으로 한 SSG 동적 라우팅 구현 및 Docs 페이지 작성',
+                        explaination:
+                            '빠른 디자인 시스템 Docs 구축을 위해 fs와 mdx 렌더러를 활용하여 파일 시스템을 기반으로 한 SSG 동적 라우팅을 구현했습니다.  이에따라 단지 mdx파일을 추가하는 것 만으로도 Docs페이지의 메뉴, 라우팅을 자동으로 생성할 수 있게 되었습니다.',
+                    },
+                    {
+                        detail: '아이콘 셋 관리 및 컴포넌트 자동생성',
+                        explaination:
+                            '이번 디자인시스템의 주요 포인트로 아이콘 셋 관리 및 컴포넌트 자동생성이 있습니다.  디자이너분이 제공한 아이콘 셋을 Node를 이용하여 자동으로 컴포넌트화 시키는 작업을 진행하였습니다.',
+                    },
+                    {
+                        detail: 'GitHub Actions을 활용한 GitHub Pages CI/CD 구축',
+                        explaination:
+                            '기존에는 ECS/EC2를 사용하여 배포했으나, 이번 프로젝트에서는 EC2 인스턴스를 운영할 정도의 리소스가 필요하지 않았습니다.  따라서 GitHub Actions을 활용해 GitHub Pages 배포를 위한 CI/CD 파이프라인을 구축하였습니다.',
+                    },
+                ],
+                stacks: ['Typescript', 'Nextjs', 'Tailwind CSS', 'MDX', 'Nodejs', 'Radix UI'],
+            },
             flunti: {
                 title: 'flunti.io 서비스 개발 및 고도화',
                 duration: '2024.03 ~',
@@ -19,12 +41,12 @@ export const history = {
                     {
                         detail: '이미지 최적화를 통한 페이지 로딩속도 개선',
                         explaination:
-                            '디자이너분과의 협업을 통하여, Webp결과물을 이용 및 Next.js의 image컴포넌트를 이용하여 로딩 속도를 개선하였습니다. 실제 큰 이미지가 들어가는 페이지 로딩 속도가 최대 5초까지 걸리던 문제를 1초 이하로 단축하였습니다.',
+                            '디자이너분과의 협업을 통하여, Webp결과물을 이용 및 Next.js의 image컴포넌트를 이용하여 로딩 속도를 개선하였습니다.  실제 큰 이미지가 들어가는 페이지 로딩 속도가 최대 5초까지 걸리던 문제를 1초 이하로 단축하였습니다.',
                     },
                     {
                         detail: '재사용을 위해 모달, 버튼, 아코디언 등 공통 컴포넌트 설계 및 작성',
                         explaination:
-                            '프로젝트 시작 시, 초기에 라이브러리를 사용하지 않고 개발을 진행하였습니다. 컨벤션에 맞춰 개발하던 도중, 반복되는 컴포넌트 작성을 피하기위하여 공통되는 기능들을 따로 컴포넌트화 시켜서 개발자들의 개발 효율성을 높였습니다.',
+                            '프로젝트 시작 시, 초기에 라이브러리를 사용하지 않고 개발을 진행하였습니다.  컨벤션에 맞춰 개발하던 도중, 반복되는 컴포넌트 작성을 피하기위하여 공통되는 기능들을 따로 컴포넌트화 시켜서  개발자들의 개발 효율성을 높였습니다.',
                     },
                     {
                         detail: '유지보수 속도 향상을 위해 프로젝트 아키텍처 변환(FSD) 및 Storybook 도입',
