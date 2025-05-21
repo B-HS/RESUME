@@ -5,17 +5,17 @@ import { FC } from 'react'
 const HistoryDescription: FC<{ descriptions: string[]; which: '배경' | '개선' | '결과' }> = ({ descriptions, which }) => {
     const labelColor =
         which === '배경'
-            ? 'text-neutral-600 border-neutral-500'
+            ? 'text-primary/90 border-primary/70'
             : which === '개선'
               ? 'text-blue-600 border-blue-500'
               : 'text-green-600 border-green-500'
 
     return (
         <div className='flex mb-2'>
-            <div className={cn('shrink-0 font-semibold text-neutral-700 border-neutral-300 border-r-3 pr-3.5', labelColor)}>{which}</div>
+            <div className={cn('shrink-0 font-semibold text-primary/70 border-border border-r-3 pr-3.5', labelColor)}>{which}</div>
             <div className='flex-1 pl-3.5'>
                 {descriptions.map((description, index) => (
-                    <p key={index} className='text-neutral-950 mb-1.5'>
+                    <p key={index} className='text-primary/95 mb-1.5'>
                         {description}
                     </p>
                 ))}
@@ -26,8 +26,8 @@ const HistoryDescription: FC<{ descriptions: string[]; which: '배경' | '개선
 
 const ExperiencesHistoryItem: FC<HistoryItem> = ({ title, background, implementation, results }) => {
     return (
-        <div className='border-neutral-200 py-5'>
-            <h3 className='text-lg font-bold mb-3.5 text-neutral-800'>{title}</h3>
+        <div className='border-border py-5'>
+            <h3 className='text-lg font-bold mb-3.5 text-primary'>{title}</h3>
             <HistoryDescription descriptions={background} which='배경' />
             <HistoryDescription descriptions={implementation} which='개선' />
             <HistoryDescription descriptions={results} which='결과' />

@@ -1,5 +1,6 @@
 import { cn } from '@shared/utils'
-import { ThemeProvider } from '@widgets/provider'
+
+import { ThemeProvider } from 'next-themes'
 import { M_PLUS_Rounded_1c } from 'next/font/google'
 import { FC, ReactNode } from 'react'
 import './globals.css'
