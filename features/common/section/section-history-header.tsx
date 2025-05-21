@@ -1,14 +1,22 @@
-export const SectionHistoryHeader = ({ title, subtitle, job, working }: { title: string; working: string; job: string; subtitle?: string }) => {
+import { cn } from '@shared/utils'
+import type { FC } from 'react'
+
+export const SectionHistoryHeader: FC<{
+    title: string
+    working: string
+    job: string
+    subtitle?: string
+}> = ({ title, subtitle, job, working }) => {
     return (
-        <section className='flex flex-col w-full border-b py-2'>
-            <span className='text-xs'>{subtitle}</span>
-            <section className='flex gap-2 flex-wrap items-baseline'>
-                <span className='text-2xl text-nowrap font-bold'>{title}</span>
-                <section className='space-x-2 whitespace-nowrap'>
-                    <span className='font-semibold'>{job}</span>
-                    <span>{working}</span>
-                </section>
-            </section>
-        </section>
+        <div className='w-full pb-3'>
+            {subtitle && <span className='text-xs text-neutral-500 block mb-1'>{subtitle}</span>}
+            <div className='flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-3'>
+                <h2 className='text-2xl font-bold text-neutral-800'>{title}</h2>
+                <div className='flex items-baseline gap-2 text-neutral-600'>
+                    <span className='font-medium'>{job}</span>
+                    <span className='text-sm'>{working}</span>
+                </div>
+            </div>
+        </div>
     )
 }

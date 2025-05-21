@@ -11,7 +11,7 @@ const Page = () => {
         <Fragment>
             <SiteHeader name='Hyunseok Byun' subTitles={subTitles} />
             <section className='max-w-(--breakpoint-2xl) size-full mx-auto'>
-                <section className='flex flex-col gap-5 relative'>
+                <section className='flex flex-col relative'>
                     <ContractWidget />
                     <Separator />
                     <IntroduceWidget introduce={introduces} />

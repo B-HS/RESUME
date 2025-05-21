@@ -1,7 +1,7 @@
 export const skills = {
     Frontend: {
         'Languages': ['Typescript | Javascript'],
-        'Frameworks': ['Nextjs', 'Vuejs', 'SvelteKit'],
+        'Frameworks': ['Nextjs', 'Vuejs'],
         'Libraries/Tools': ['Reactjs', 'Bun', 'Electron'],
     },
     Backend: {

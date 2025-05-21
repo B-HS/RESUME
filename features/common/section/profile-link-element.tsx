@@ -8,7 +8,10 @@ export const ProfileLinkElement = ({ links, icon }: { links: { title?: string; u
             <h2 className='font-medium text-neutral-700 mb-1'>{links[0].title}</h2>
             <section className='space-y-1'>
                 {links.map((link, index) => (
-                    <Link key={index} href={link.url} className='block text-blue-600 hover:text-blue-700 transition-colors text-nowrap'>
+                    <Link
+                        key={index}
+                        href={link.url}
+                        className='block text-blue-900 hover:text-blue-950 transition-colors text-nowrap dark:text-blue-100 dark:hover:text-blue-50'>
                         {link.displayText}
                     </Link>
                 ))}
