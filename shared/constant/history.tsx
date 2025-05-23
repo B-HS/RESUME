@@ -77,7 +77,7 @@ export const history: History = {
                     '디자이너는 별도 페이지 없이 Storybook 상에서 피드백 작성 가능',
                     '피드백 수집·반영 속도 향상 → 개발·디자인 간 협업 흐름 개선',
               ],
-            }
+            },
             {
                 title: '로직 최적화 및 리펙터링',
                 background: [
