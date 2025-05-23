@@ -62,21 +62,22 @@ export const history: History = {
                 ],
             },
             {
-                title: '커스텀 플러그인 제작',
-                background: [
-                    '기성 라이브러리로는 사용자의 세부 요구사항을 해결하기 어려운 상황.',
-                    '디자이너 및 관리자 측에서의 storybook, notion과 유사한 피드백을 받아 UX, 흐름 개선이 요구됨.',
-                ],
-                implementation: [
-                    'Tiptap + ProseMirror 기반 으로 Line placeholder, Slash command, Toolbar 등 Notion 유사 UX 플러그인 구현',
-                    'NotionAPI을 이용하여 Storybook Comment 플러그인 구현',
-                ],
-                results: [
-                    'Notion을 자주쓰는 관리자가 익숙한 UX 환경에서 콘텐츠 작성 가능 → 긍정적 피드백 확보',
-                    '디자이너는 별도 페이지 없이 Storybook 내에서 직접 피드백 작성 가능',
-                    '개발자는 피드백을 중앙화된 위치에서 바로 확인 및 반영 → 협업 속도 향상',
-                ],
-            },
+              title: '커스텀 플러그인 제작',
+              background: [
+                    '어드민 에디터, 디자인 시스템 등에서 사용자의 세부적인 편집 요구가 늘어남.',
+                    '기존 라이브러리만으로는 Notion 스타일의 UX나 Storybook 상호 피드백 흐름 구현이 어려웠음.',
+                    '디자이너·운영자가 원하는 방식으로 콘텐츠를 편집하거나 피드백을 주기 위한 개선 요청이 반복됨.',
+              ],
+              implementation: [
+                    'Tiptap + ProseMirror로 Slash command, Line placeholder, Toolbar 등 커스텀 WYSIWYG 구현',
+                    'Storybook에 Notion API 기반 코멘트 플러그인 도입 → 컴포넌트 단위 피드백 기능 추가',
+              ],
+              results: [
+                    'Notion에 익숙한 사용자들이 즉시 적응 가능한 콘텐츠 편집 UX 제공',
+                    '디자이너는 별도 페이지 없이 Storybook 상에서 피드백 작성 가능',
+                    '피드백 수집·반영 속도 향상 → 개발·디자인 간 협업 흐름 개선',
+              ],
+            }
             {
                 title: '로직 최적화 및 리펙터링',
                 background: [
