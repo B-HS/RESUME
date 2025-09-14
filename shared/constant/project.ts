@@ -13,17 +13,7 @@ export const projects = [
         url: ['https://kataru.dev'],
         description: {
             background: ['SaaS형 솔루션을 만들고 싶다는 취지에서 작성'],
-            implementation: ['인프라를 Cloudflare D1, R2, Workers로 구성', 'Hono를 이용, Island를 직접구현하여 프레임워크 의존도 낮춤', 'Admin또한 bun + react로 구성'],
-            results: ['Cloudflare의 강력한 인프라를 활용하여 안정적인 서비스 운영', '무중단의 관리까지 가능한 SaaS형태의 블로그 구축'],
-
-        }
-    },
-    {
-        name: 'Kataru',
-        url: ['https://kataru.dev'],
-        description: {
-            background: ['SaaS형 솔루션을 만들고 싶다는 취지에서 작성'],
-            implementation: ['인프라를 Cloudflare D1, R2, Workers로 구성', 'Hono를 이용, Island를 직접구현하여 프레임워크 의존도 낮춤', 'Admin또한 bun + react로 구성'],
+            implementation: ['인프라를 Cloudflare D1, R2, Workers로 구성', 'Hono를 이용, Island를 직접구현', 'Admin또한 bun + react로 구성'],
             results: ['Cloudflare의 강력한 인프라를 활용하여 안정적인 서비스 운영', '무중단의 관리까지 가능한 SaaS형태의 블로그 구축'],
 
         }
