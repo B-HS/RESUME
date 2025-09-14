@@ -5,8 +5,18 @@ export const projects = [
         description: {
             background: ['기존 블로그는 느리고 수정이 불가, 최신 기술 적용 불가', 'Misskey 연동 등 다양한 콘텐츠를 통합하고 싶었음.'],
             implementation: ['Next.js + TypeScript 기반 구조 구성', 'Drizzle, Cognito로 인증·데이터 처리', 'Misskey API로 외부 콘텐츠 통합'],
-            results: ['기술 실험과 통합이 쉬운 커스터마이징 블로그 완성', '정적 글 외 콘텐츠까지 아우르는 개인 허브 구축'],
+            results: ['기술 실험과 통합이 쉬운 커스터마이징 블로그 완성', '게시글 외 콘텐츠까지 아우르는 개인사이트 구축'],
         },
+    },
+    {
+        name: 'Kataru',
+        url: ['https://kataru.dev'],
+        description: {
+            background: ['SaaS형 솔루션을 만들고 싶다는 취지에서 작성'],
+            implementation: ['인프라를 Cloudflare D1, R2, Workers로 구성', 'Hono를 이용, Island를 직접구현하여 프레임워크 의존도 낮춤', 'Admin또한 bun + react로 구성'],
+            results: ['Cloudflare의 강력한 인프라를 활용하여 안정적인 서비스 운영', '무중단의 관리까지 가능한 SaaS형태의 블로그 구축'],
+
+        }
     },
     {
         name: 'Kataru',
@@ -22,9 +32,9 @@ export const projects = [
         name: '웹툰 북마커',
         url: ['https://chromewebstore.google.com/detail/네이버-웹툰-북마크/cnfglfaobnkgkcnagfbaeilbpkcjcanh'],
         description: {
-            background: ['관심 웹툰만 따로 보고 싶었지만 필터링 기능이 부재.', '최근 본 회차나 이어보기가 불편했음.'],
+            background: ['관심 웹툰만 따로 보고 싶었지만 필터링 기능이 부재.', '웹툰이 너무많아 찾기가 불편.'],
             implementation: ['React 기반 크롬 확장앱 구성', '웹툰 정보 감지 후 상태 관리 구현', 'Bun으로 빌드 최적화'],
-            results: ['웹툰 필터링과 이어보기가 가능한 개인 확장앱', '크롬스토어에 등록해 도구화 완료'],
+            results: ['기존UI와 동일한 추가기능 구현', '크롬스토어에 등록해 도구화 완료'],
         },
     },
     {
@@ -49,9 +59,9 @@ export const projects = [
         name: 'BIcon',
         url: ['https://bicon.gumyo.net'],
         description: {
-            background: ['README용 배지를 만들기 위해 외부사이트이용'],
+            background: ['README용 뱃지를 만들기 위해 외부사이트이용'],
             implementation: ['Next.js 기반 뱃지 생성기 구현', '입력값에 따라 실시간 이미지 생성'],
-            results: ['배지를 쉽고 빠르게 생성할 수 있는 도구 제공', '외부툴에 의존하지않은 개인 뱃지 생성'],
+            results: ['뱃지를 쉽고 빠르게 생성할 수 있는 도구 제공', '외부툴에 의존하지않은 개인 뱃지 생성'],
         },
     },
     {

@@ -3,11 +3,11 @@ import { cn } from '@shared/utils'
 import { ExternalLink } from 'lucide-react'
 import { FC } from 'react'
 
-const ProjectDescription: FC<{ descriptions: string[]; which: '배경' | '개선' | '결과' }> = ({ descriptions, which }) => {
+const ProjectDescription: FC<{ descriptions: string[]; which: '배경' | '구현' | '결과' }> = ({ descriptions, which }) => {
     const labelColor =
         which === '배경'
             ? 'text-primary/90 border-primary/70'
-            : which === '개선'
+            : which === '구현'
               ? 'text-blue-600 border-blue-500'
               : 'text-green-600 border-green-500'
 
@@ -38,7 +38,7 @@ const SideProjectItem: FC<(typeof projects)[0]> = ({ name, url, description }) =
                 </a>
             </h3>
             <ProjectDescription descriptions={description.background} which='배경' />
-            <ProjectDescription descriptions={description.implementation} which='개선' />
+            <ProjectDescription descriptions={description.implementation} which='구현' />
             <ProjectDescription descriptions={description.results} which='결과' />
         </div>
     )
