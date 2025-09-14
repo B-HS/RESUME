@@ -37,15 +37,6 @@ export const projects = [
         },
     },
     {
-        name: 'template',
-        url: ['https://github.com/B-HS/template'],
-        description: {
-            background: ['프로젝트 시작마다 반복되는 환경 설정이 번거로웠음.'],
-            implementation: ['Next.js + TypeScript 템플릿 구조 설계', '라우팅·상태관리 등 초기 세팅 구성'],
-            results: ['세팅 시간 단축, 반복 작업 최소화', '일관된 개발 환경 기반 생산성 향상'],
-        },
-    },
-    {
         name: 'BIcon',
         url: ['https://bicon.gumyo.net'],
         description: {
