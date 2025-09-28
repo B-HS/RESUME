@@ -19,6 +19,26 @@ export const projects = [
         }
     },
     {
+        name: 'Scrollbar TOC',
+        url: ['https://www.npmjs.com/package/scrollbar-toc', 'https://b-hs.github.io/scrollbar-toc/'],
+        description: {
+            background: [
+                '나무위키의 스크롤바 TOC에서 영감을 받음',
+                '매번 스크롤 위치를 계산하는 것이 번거로웠음',
+            ],
+            implementation: [
+                '모든 프레임워크에서 사용 가능하도록 설계',
+                'Heading위치 자동 계산 및 overlap 방지',
+                '위치값 기준 자동 button 생성'
+            ],
+            results: [
+                'NPM 패키지로 배포하여 누구나 사용 가능',
+                '프레임워크 독립적인 범용 라이브러리 완성',
+                'style또한 자유로이 변경 가능'
+            ],
+        },
+    },
+    {
         name: '웹툰 북마커',
         url: ['https://chromewebstore.google.com/detail/네이버-웹툰-북마크/cnfglfaobnkgkcnagfbaeilbpkcjcanh'],
         description: {
