@@ -27,7 +27,7 @@ const ProjectDescription: FC<{ descriptions: string[]; which: '배경' | '구현
 
 const SideProjectItem: FC<(typeof projects)[0]> = ({ name, url, description }) => {
     return (
-        <div className='border-border py-5 w-[450px]'>
+        <div className='border-border py-5 w-full'>
             <h3 className='font-bold mb-3.5 text-primary/80'>
                 <a
                     href={url[0]}

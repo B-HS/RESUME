@@ -40,7 +40,7 @@ const RootLayout: FC<{ children: ReactNode }> = ({ children }) => {
         <html lang='ko' suppressHydrationWarning>
             <body
                 className={cn(
-                    'flex flex-col min-h-dvh h-full font-mplus antialiased max-w-(--breakpoint-lg) mx-auto  min-w-[335px] text-sm sm:text-lg',
+                    'flex flex-col min-h-dvh h-full font-mplus antialiased max-w-(--breakpoint-xl) mx-auto  min-w-[335px] text-sm sm:text-lg',
                     fontRound.variable,
                 )}>
                 <ThemeProvider attribute='class' defaultTheme='light' enableSystem disableTransitionOnChange>
