@@ -1,21 +1,23 @@
 export const skills = {
     Frontend: {
-        'Languages': ['Typescript | Javascript'],
-        'Frameworks': ['Nextjs', 'Vuejs'],
-        'Libraries/Tools': ['Reactjs', 'Bun', 'Electron'],
+      Languages: ['TypeScript', 'JavaScript'],
+      Frameworks: ['Next.js', 'Vue.js'],
+      'Libraries/Tools': ['React', 'Bun', 'Electron'],
     },
     Backend: {
-        Languages: ['Typescript', 'Java'],
-        Frameworks: ['Hono', 'Express', 'Spring Boot', 'Nestjs'],
-        ORMs: ['Drizzle', 'Prisma', 'MyBatis', 'JPA', 'TypeORM'],
+      Languages: ['TypeScript', 'Java'],
+      Frameworks: ['Hono', 'Express', 'Nest.js', 'Spring Boot'],
+      ORMs: ['Drizzle', 'Prisma', 'TypeORM', 'JPA', 'MyBatis'],
     },
-    Database: {
-        DB: ['MariaDB', 'MySQL', 'SQLite', 'Oracle'],
+    Cloud: {
+        Platforms: ['Cloudflare Workers', 'Cloudflare Pages', 'Cloudflare R2', 'AWS Lightsail'],
+     'CI/CD, Auth': ['GitHub Actions', 'AWS Cognito'],
     },
     DevOps: {
-        'Cloud': ['AWS Lightsail', 'Cloudflare R2 / Page'],
-        'OS': ['RHEL9 (Rocky Linux 9)', 'Ubuntu'],
-        'Tools': ['Nginx', 'Docker', 'Wireguard'],
-        'etc.': ['Github Actions', 'AWS Cognito'],
+      OS: ['Rocky Linux 9 (RHEL9)', 'Ubuntu'],
+      Tools: ['Docker', 'Nginx', 'WireGuard'],
     },
-}
+    Database: {
+      Engines: ['MariaDB', 'MySQL', 'SQLite', 'Oracle'],
+    },
+  }
