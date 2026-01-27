@@ -1,6 +1,6 @@
 export * from './contract'
 export { educationAndEtc } from './education'
-export { history } from './history'
-export { introduces } from './introduce'
+export { histories } from './history'
+export { introduces, projectLabels, experienceLabels } from './introduce'
 export { projects } from './project'
 export { skills } from './skill'

@@ -1,7 +1,8 @@
 import { SectionHeader } from '@features/common/section'
-import { ReactNode } from 'react'
+import { introduces } from '@shared/constant'
 
-export const IntroduceWidget = ({ introduce }: { introduce: (string | ReactNode)[] }) => {
+export const IntroduceWidget = ({ lang }: { lang: 'ko' | 'jp' }) => {
+    const introduce = introduces[lang]
     return (
         <SectionHeader title='Introduce'>
             <section className='space-y-3'>

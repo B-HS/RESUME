@@ -1,18 +1,24 @@
 import { SectionHeader, SectionHistoryHeader } from '@features/common/section'
-import { History, HistoryItem } from '@shared/constant/history'
+import { experienceLabels } from '@shared/constant'
+import { histories, HistoryItem } from '@shared/constant/history'
 import { cn } from '@shared/utils'
 import { FC } from 'react'
-const HistoryDescription: FC<{ descriptions: string[]; which: '배경' | '개선' | '결과' }> = ({ descriptions, which }) => {
+
+type Lang = 'ko' | 'jp'
+type LabelType = 'background' | 'improvement' | 'results'
+
+const HistoryDescription: FC<{ descriptions: string[]; labelType: LabelType; lang: Lang }> = ({ descriptions, labelType, lang }) => {
+    const label = experienceLabels[lang][labelType]
     const labelColor =
-        which === '배경'
+        labelType === 'background'
             ? 'text-primary/90 border-primary/70'
-            : which === '개선'
+            : labelType === 'improvement'
               ? 'text-blue-600 border-blue-500'
               : 'text-green-600 border-green-500'
 
     return (
         <div className='flex mb-2'>
-            <div className={cn('shrink-0 font-semibold text-primary/70 border-border border-r-3 pr-3.5', labelColor)}>{which}</div>
+            <div className={cn('shrink-0 font-semibold text-primary/70 border-border border-r-3 pr-3.5', labelColor)}>{label}</div>
             <div className='flex-1 pl-3.5'>
                 {descriptions.map((description, index) => (
                     <p key={index} className='text-primary/95 mb-1.5'>
@@ -24,25 +30,26 @@ const HistoryDescription: FC<{ descriptions: string[]; which: '배경' | '개선
     )
 }
 
-const ExperiencesHistoryItem: FC<HistoryItem> = ({ title, background, implementation, results }) => {
+const ExperiencesHistoryItem: FC<HistoryItem & { lang: Lang }> = ({ title, background, implementation, results, lang }) => {
     return (
         <div className='border-border py-5'>
             <h3 className='text-lg font-bold mb-3.5 text-primary'>{title}</h3>
-            <HistoryDescription descriptions={background} which='배경' />
-            <HistoryDescription descriptions={implementation} which='개선' />
-            <HistoryDescription descriptions={results} which='결과' />
+            <HistoryDescription descriptions={background} labelType='background' lang={lang} />
+            <HistoryDescription descriptions={implementation} labelType='improvement' lang={lang} />
+            <HistoryDescription descriptions={results} labelType='results' lang={lang} />
         </div>
     )
 }
 
-export const ExperiencesWidget = ({ histories }: { histories: History }) => {
+export const ExperiencesWidget = ({ lang }: { lang: 'ko' | 'jp' }) => {
+    const historyList = histories[lang]
     return (
         <SectionHeader title='Experiences'>
-            {Object.entries(histories).map(([key, value]) => (
+            {Object.entries(historyList).map(([key, value]) => (
                 <section key={key} className='divide-y'>
                     <SectionHistoryHeader {...value} />
                     {value.history.map((historyItem) => (
-                        <ExperiencesHistoryItem key={historyItem.title} {...historyItem} />
+                        <ExperiencesHistoryItem key={historyItem.title} {...historyItem} lang={lang} />
                     ))}
                 </section>
             ))}

@@ -1,28 +1,28 @@
 import { UtilIcons } from '@features/common'
-import { educationAndEtc, history, introduces, projects, skills } from '@shared/constant'
+import { skills } from '@shared/constant'
 import { Separator } from '@shared/ui/separator'
 import { ContractWidget, EducationWidget, ExperiencesWidget, IntroduceWidget, SideProjectWidget, SkillsWidget } from '@widgets/contents'
 import { SiteHeader } from '@widgets/header'
 import { Fragment } from 'react'
 
-const Page = () => {
-    const subTitles = ['HYUNSEOK BYUN', '95.07.01', '반응형 백과사전을 지향하는 개발자']
+type Lang = 'ko' | 'jp'
+
+const widgets = [ContractWidget, IntroduceWidget, ExperiencesWidget, SideProjectWidget, SkillsWidget, EducationWidget]
+
+const Page = async ({ searchParams }: { searchParams: Promise<{ lang: Lang }> }) => {
+    const params = await searchParams
+    const lang = params.lang || 'ko'
     return (
         <Fragment>
-            <SiteHeader name='Hyunseok Byun' subTitles={subTitles} />
+            <SiteHeader lang={lang} />
             <section className='max-w-(--breakpoint-2xl) size-full mx-auto'>
                 <section className='flex flex-col'>
-                    <ContractWidget />
-                    <Separator />
-                    <IntroduceWidget introduce={introduces} />
-                    <Separator />
-                    <ExperiencesWidget histories={history} />
-                    <Separator />
-                    <SideProjectWidget projects={projects} />
-                    <Separator />
-                    <SkillsWidget skills={skills} />
-                    <Separator />
-                    <EducationWidget educations={educationAndEtc} />
+                    {widgets.map((Widget, index) => (
+                        <Fragment key={index}>
+                            <Widget lang={lang} />
+                            <Separator />
+                        </Fragment>
+                    ))}
                     <UtilIcons />
                 </section>
             </section>
