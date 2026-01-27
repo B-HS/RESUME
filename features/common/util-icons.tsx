@@ -4,15 +4,13 @@ import { Button, buttonVariants } from '@shared/ui/button'
 import { ArrowUp, MoonStar, SunDim } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import dynamic from 'next/dynamic'
-import { useRouter, useSearchParams } from 'next/navigation'
+import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
 const UtilIconsComponent = ({ lang }: { lang: 'ko' | 'jp' }) => {
-    const [language, setLanguage] = useState<'ko' | 'jp'>(lang)
     const router = useRouter()
-    const setSearchParams = (params: { lang: 'ko' | 'jp' }) => {
-        setLanguage(params.lang)
-        router.push(`?lang=${params.lang}`)
+    const setSearchParams = (lang: 'ko' | 'jp') => {
+        router.push(`/${lang === 'ko' ? '' : 'jp'}`)
     }
     const [isTop, setIsTop] = useState(true)
     const { setTheme, theme } = useTheme()
@@ -26,16 +24,16 @@ const UtilIconsComponent = ({ lang }: { lang: 'ko' | 'jp' }) => {
 
     return (
         <section className='flex flex-col gap-2 fixed bottom-7 right-7 items-end'>
-            {language === 'ko' ? (
+            {lang === 'ko' ? (
                 <Button
                     className={buttonVariants({ variant: 'secondary', size: 'icon', className: 'p-2 cursor-pointer border opacity-80' })}
-                    onClick={() => setSearchParams({ lang: 'jp' })}>
+                    onClick={() => setSearchParams('jp')}>
                     日本語
                 </Button>
             ) : (
                 <Button
                     className={buttonVariants({ variant: 'secondary', size: 'icon', className: 'p-2 cursor-pointer border opacity-80' })}
-                    onClick={() => setSearchParams({ lang: 'ko' })}>
+                    onClick={() => setSearchParams('ko')}>
                     한글
                 </Button>
             )}
