@@ -7,7 +7,7 @@ import { Fragment } from 'react'
 const widgets = [ContractWidget, IntroduceWidget, ExperiencesWidget, SideProjectWidget, SkillsWidget, EducationWidget]
 
 const Page = async () => {
-    const lang = 'ko'
+    const lang = 'jp'
     return (
         <Fragment>
             <SiteHeader lang={lang} />
