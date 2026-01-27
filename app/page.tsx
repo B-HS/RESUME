@@ -23,7 +23,7 @@ const Page = async ({ searchParams }: { searchParams: Promise<{ lang: Lang }> })
                             <Separator />
                         </Fragment>
                     ))}
-                    <UtilIcons />
+                    <UtilIcons lang={lang} />
                 </section>
             </section>
         </Fragment>
