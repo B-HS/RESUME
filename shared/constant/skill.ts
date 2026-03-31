@@ -10,11 +10,11 @@ export const skills = {
         ORMs: ['Drizzle', 'Prisma', 'TypeORM', 'JPA', 'MyBatis'],
     },
     Cloud: {
-        'Platforms': ['AWS Lightsail', 'Cloudflare Workers', 'Cloudflare Pages', 'Cloudflare R2'],
+        'Platforms': ['AWS Lightsail', 'Vercel', 'Cloudflare Workers', 'Cloudflare Pages', 'Cloudflare R2'],
         'CI/CD, Auth': ['GitHub Actions', 'AWS Cognito'],
     },
     DevOps: {
-        OS: ['Rocky Linux 9 (RHEL9)', 'Ubuntu'],
+        OS: ['Ubuntu/Debian', 'Rocky Linux 9 (RHEL9)'],
         Tools: ['Docker', 'Nginx', 'WireGuard'],
     },
     Database: {
