@@ -1,4 +1,5 @@
 import { LangType, translator } from '@entities/translations'
+import { SectionHeader } from '@features/common/section-header'
 import { Introduce } from '@features/resume/introduce'
 import { ResumeSection } from '@features/resume/section'
 import { FC } from 'react'
@@ -10,6 +11,7 @@ export const Resume: FC<ResumeWidget> = ({ lang }) => {
     return (
         <div className='flex flex-col'>
             <Introduce lang={lang} />
+            <SectionHeader title={t('WORK_EXPERIENCE')} />
             <ResumeSection
                 isFirst
                 workName='GLOBALKNOWLEDGE'

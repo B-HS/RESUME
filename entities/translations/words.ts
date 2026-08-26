@@ -9,6 +9,7 @@ export const WORDS = [
     'GITHUB',
     'BLOG',
     'INTRODUCE',
+    'BIRTHDAY',
     'WORK_EXPERIENCE',
     'WORK_GLOBALKNOWLEDGE_NAME',
     'WORK_GLOBALKNOWLEDGE_PERIOD',

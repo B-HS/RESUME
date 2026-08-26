@@ -12,9 +12,10 @@ export const ENGLISH_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     GITHUB: 'https://github.com/B-HS',
     INTRODUCE:
         'Broad engineering scope with architecture & design systems \n Enhanced cross-functional collaboration using AI-driven automation (PR review, docs, page generation) \n Experienced in large-scale application development for stability \n Focused on performance optimization and better DX',
+    BIRTHDAY: '95. 07. 01',
     WORK_EXPERIENCE: 'Work Experience',
     WORK_GLOBALKNOWLEDGE_NAME: 'Global Knowledge Korea',
-    WORK_GLOBALKNOWLEDGE_PERIOD: '2024. 03. 18 - 2026. 09. 30',
+    WORK_GLOBALKNOWLEDGE_PERIOD: '24. 03. 18 - 26. 09. 30',
     WORK_GLOBALKNOWLEDGE_LOCATION: 'Seoul, South Korea',
     WORK_GLOBALKNOWLEDGE_ROLE: 'Frontend Engineer / AI Engineer',
 
@@ -37,7 +38,7 @@ export const ENGLISH_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     WORK_GLOBALKNOWLEDGE_FLUNTI_SITE: 'https://flunti.io',
 
     WORK_PROSOFT_NAME: 'Prosoft',
-    WORK_PROSOFT_PERIOD: '2023. 02. 06 - 2024. 03. 01',
+    WORK_PROSOFT_PERIOD: '23. 02. 06 - 24. 03. 01',
     WORK_PROSOFT_LOCATION: 'Changwon, South Korea',
     WORK_PROSOFT_ROLE: 'Fullstack Engineer',
     WORK_PROSOFT_MIGRATION_TITLE: 'Legacy Solution Re-architecture and Enhancement',
@@ -48,7 +49,7 @@ export const ENGLISH_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
         'Refactored existing ORACLE DB SQL statements to ANSI standard SQL and applied them to MyBatis mappers for testing',
 
     WORK_KEYWORDSSTUDIO_NAME: 'Keywords Studio',
-    WORK_KEYWORDSSTUDIO_PERIOD: '2019. 07 - 2022. 01',
+    WORK_KEYWORDSSTUDIO_PERIOD: '19. 07 - 22. 01',
     WORK_KEYWORDSSTUDIO_LOCATION: 'Tokyo, Japan',
     WORK_KEYWORDSSTUDIO_ROLE: 'LQA Tester',
     WORK_KEYWORDSSTUDIO_LQA_TITLE: 'Game LQA and Onboarding Process Improvement',

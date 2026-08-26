@@ -12,9 +12,10 @@ export const JAPANESE_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     GITHUB: 'https://github.com/B-HS',
     INTRODUCE:
         'アーキテクチャ設計やデザインシステムなど幅広い開発経験 \n AIを活用した自動化（PRレビュー、Docs、ページ生成）による他職種との協力効率化 \n 大規模アプリケーション開発へのサービスの安定性確保の経験 \n 最適化とDX向上を優先した開発を推進',
+    BIRTHDAY: '95. 07. 01',
     WORK_EXPERIENCE: 'Work Experience',
     WORK_GLOBALKNOWLEDGE_NAME: 'Global Knowledge Korea',
-    WORK_GLOBALKNOWLEDGE_PERIOD: '2024. 03. 18 - 2026. 09. 30',
+    WORK_GLOBALKNOWLEDGE_PERIOD: '24. 03. 18 - 26. 09. 30',
     WORK_GLOBALKNOWLEDGE_LOCATION: '韓国、ソウル',
     WORK_GLOBALKNOWLEDGE_ROLE: 'Frontend Engineer / AI Engineer',
 
@@ -37,7 +38,7 @@ export const JAPANESE_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     WORK_GLOBALKNOWLEDGE_FLUNTI_SITE: 'https://flunti.io',
 
     WORK_PROSOFT_NAME: 'Prosoft',
-    WORK_PROSOFT_PERIOD: '2023. 02. 06 - 2024. 03. 01',
+    WORK_PROSOFT_PERIOD: '23. 02. 06 - 24. 03. 01',
     WORK_PROSOFT_LOCATION: '韓国、昌原',
     WORK_PROSOFT_ROLE: 'Fullstack Engineer',
     WORK_PROSOFT_MIGRATION_TITLE: 'レガシーソリューションの再設計と高度化',
@@ -47,7 +48,7 @@ export const JAPANESE_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     WORK_PROSOFT_DBMIGRATION_DESCRIPTION: '既存のORACLE DB構文のSQL文をANSI標準SQLにリファクタリングし、MyBatisマッパーに適用してテスト',
 
     WORK_KEYWORDSSTUDIO_NAME: 'Keywords Studio',
-    WORK_KEYWORDSSTUDIO_PERIOD: '2019. 07 - 2022. 01',
+    WORK_KEYWORDSSTUDIO_PERIOD: '19. 07 - 2022. 01',
     WORK_KEYWORDSSTUDIO_LOCATION: '日本、東京',
     WORK_KEYWORDSSTUDIO_ROLE: 'LQA Tester',
     WORK_KEYWORDSSTUDIO_LQA_TITLE: 'ゲームLQAおよびオンボーディングプロセスの改善',

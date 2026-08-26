@@ -22,7 +22,7 @@ export const Introduce: FC<IntroduceProps> = ({ lang }) => {
                         </ruby>
                     </h1>
                 </div>
-                <ResumeHeaderList type='text' lang={lang} items={['JOB_TITLE', 'LOCATION']} />
+                <ResumeHeaderList type='text' lang={lang} items={['JOB_TITLE', 'LOCATION', 'BIRTHDAY']} />
             </div>
             <div className='flex flex-wrap gap-1.25 items-center py-0.25'>
                 <ResumeHeaderList type='mail' lang={lang} items={['EMAIL']} isFullWidth />

@@ -12,9 +12,10 @@ export const KOREAN_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     GITHUB: 'https://github.com/B-HS',
     INTRODUCE:
         '아키텍처 설계 및 디자인 시스템 구축 등 폭넓은 개발 경험 \n AI 기반 자동화(PR리뷰, Docs, 페이지 생성)로 팀 생산성 향상 \n 대규모 트래픽 환경에서의 서비스 안정성 확보 경험 \n 개발에 있어서, 성능 최적화와 DX 향상을 우선목표로 함',
+    BIRTHDAY: '95. 07. 01',
     WORK_EXPERIENCE: 'Work Experience',
     WORK_GLOBALKNOWLEDGE_NAME: '한국글로벌널리지네트웍(주)',
-    WORK_GLOBALKNOWLEDGE_PERIOD: '2024. 03. 18 - 2026. 09. 30',
+    WORK_GLOBALKNOWLEDGE_PERIOD: '24. 03. 18 - 26. 09. 30',
     WORK_GLOBALKNOWLEDGE_LOCATION: '대한민국, 서울',
     WORK_GLOBALKNOWLEDGE_ROLE: 'Frontend Engineer / AI Engineer',
 
@@ -37,7 +38,7 @@ export const KOREAN_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     WORK_GLOBALKNOWLEDGE_FLUNTI_SITE: 'https://flunti.io',
 
     WORK_PROSOFT_NAME: '프로소프트',
-    WORK_PROSOFT_PERIOD: '2023. 02. 06 - 2024. 03. 01',
+    WORK_PROSOFT_PERIOD: '23. 02. 06 - 24. 03. 01',
     WORK_PROSOFT_LOCATION: '대한민국, 창원',
     WORK_PROSOFT_ROLE: 'Fullstack Engineer',
     WORK_PROSOFT_MIGRATION_TITLE: '레거시 솔루션 재설계 및 고도화',
@@ -47,7 +48,7 @@ export const KOREAN_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     WORK_PROSOFT_DBMIGRATION_DESCRIPTION: '기존 ORACLE DB 문법의 SQL문을 ANSI 표준의 SQL로 리팩터링 및 MyBatis mapper에 적용 및 테스트',
 
     WORK_KEYWORDSSTUDIO_NAME: 'Keywords Studio',
-    WORK_KEYWORDSSTUDIO_PERIOD: '2019. 07 - 2022. 01',
+    WORK_KEYWORDSSTUDIO_PERIOD: '19. 07 - 22. 01',
     WORK_KEYWORDSSTUDIO_LOCATION: '일본, 도쿄',
     WORK_KEYWORDSSTUDIO_ROLE: 'LQA Tester',
     WORK_KEYWORDSSTUDIO_LQA_TITLE: '게임 LQA 및 온보딩 프로세스 개선',
