@@ -8,6 +8,7 @@ export const JAPANESE_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     JOB_TITLE: 'Frontend Engineer / AI Engineer',
     BLOG: 'https://blog.gumyo.net',
     EMAIL: 'hs@gumyo.net',
-    Location: 'Seoul, South Korea',
-    Github: 'https://github.com/B-HS',
+    LOCATION: 'Seoul, South Korea',
+    GITHUB: 'https://github.com/B-HS',
+    INTRODUCE: ''
 }

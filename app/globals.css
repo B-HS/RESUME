@@ -166,6 +166,10 @@ body {
     scroll-behavior: smooth;
 }
 
+.list-inside::marker {
+    margin-right: 0.25rem !important;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }

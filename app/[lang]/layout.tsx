@@ -1,6 +1,9 @@
 import { Nanum_Gothic } from 'next/font/google'
 import { FC, PropsWithChildren } from 'react'
 
+import { VirtualScroll } from '@features/theme/virtual-scroll'
+import { GoToTop } from '@widgets/layout/go-to-top'
+
 type LayoutProps = {
     params: Promise<{ lang: string }>
 }
@@ -16,7 +19,11 @@ const Layout: FC<PropsWithChildren<LayoutProps>> = async ({ params, children }) 
 
     return (
         <html lang={lang} className={nanumGothic.variable}>
-            <body className='max-w-3xl mx-auto min-h-dvh w-full antialiased leading-loose'>{children}</body>
+            <body className='max-w-md mx-auto min-h-dvh w-full antialiased'>
+                {children}
+                <VirtualScroll />
+                <GoToTop />
+            </body>
         </html>
     )
 }
