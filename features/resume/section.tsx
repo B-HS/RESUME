@@ -31,7 +31,7 @@ export const ResumeSection: FC<SectionProps> = ({ title, lang, workList, workNam
                 </div>
                 <div className='flex justify-between items-center'>
                     <h5 className='text-sm font-medium text-foreground/75'>{getWorkText('ROLE')}</h5>
-                    <p className='text-sm'>{getWorkText('PERIOD')}</p>
+                    <p className='text-xs'>{getWorkText('PERIOD')}</p>
                 </div>
                 {workList.map((item) => {
                     const site = getWorkText('SITE', item)
