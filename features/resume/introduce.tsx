@@ -1,5 +1,5 @@
-import { ResumeHeaderList } from '@features/resume/header-list'
 import { LangType, translator } from '@entities/translations'
+import { ResumeHeaderList } from '@features/resume/header-list'
 import { FC } from 'react'
 
 type IntroduceProps = { lang: LangType }
@@ -7,22 +7,24 @@ type IntroduceProps = { lang: LangType }
 export const Introduce: FC<IntroduceProps> = ({ lang }) => {
     const t = translator({ lang })
     return (
-        <div className='flex flex-col pt-3 p-1.5 gap-2'>
-            <div className='leading-tight'>
+        <div className='flex flex-col pt-3 p-1.5 gap-1.5'>
+            <div className='leading-tight flex flex-wrap items-baseline gap-1.25'>
                 <div className='flex items-baseline gap-1.25'>
                     <h1 className='text-xl font-extrabold'>
-                        {t('FIRST_NAME')} {t('LAST_NAME')}
+                        <ruby>
+                            {t('LAST_NAME')}
+                            <rt className='font-medium text-muted-foreground'>{lang !== 'en' && t('LAST_NAME_TRANSLATION')}</rt>
+                        </ruby>
+                        &nbsp;
+                        <ruby>
+                            {t('FIRST_NAME')}
+                            <rt className='font-medium text-muted-foreground'>{lang !== 'en' && t('FIRST_NAME_TRANSLATION')}</rt>
+                        </ruby>
                     </h1>
-                    {lang !== 'en' && (
-                        <p className='flex items-center gap-0.5 text-sm text-muted-foreground font-semibold'>
-                            <span>{t('LAST_NAME_TRANSLATION')}</span>
-                            <span>{t('FIRST_NAME_TRANSLATION')}</span>
-                        </p>
-                    )}
                 </div>
-            </div>
-            <div className='flex flex-wrap gap-1.25 items-center py-0.75'>
                 <ResumeHeaderList type='text' lang={lang} items={['JOB_TITLE', 'LOCATION']} />
+            </div>
+            <div className='flex flex-wrap gap-1.25 items-center py-0.25'>
                 <ResumeHeaderList type='mail' lang={lang} items={['EMAIL']} isFullWidth />
                 <ResumeHeaderList type='link' lang={lang} items={['GITHUB', 'BLOG']} />
             </div>

@@ -11,7 +11,7 @@ export const KOREAN_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     LOCATION: '대한민국, 서울',
     GITHUB: 'https://github.com/B-HS',
     INTRODUCE:
-        '아키텍처 설계 및 디자인 시스템 구축 등 폭넓은 개발 경험 \n AI 기반 자동화(PR 리뷰, 문서화, 페이지 생성)로 팀 생산성 향상 경험 \n 대규모 트래픽 환경에서의 서비스 안정성 확보 경험 \n 개발에 있어서, 성능 최적화와 DX 향상을 우선목표로 함',
+        '아키텍처 설계 및 디자인 시스템 구축 등 폭넓은 개발 경험 \n AI 기반 자동화(PR리뷰, Docs, 페이지 생성)로 팀 생산성 향상 \n 대규모 트래픽 환경에서의 서비스 안정성 확보 경험 \n 개발에 있어서, 성능 최적화와 DX 향상을 우선목표로 함',
     WORK_EXPERIENCE: 'Work Experience',
     WORK_GLOBALKNOWLEDGE_NAME: '한국글로벌널리지네트웍(주)',
     WORK_GLOBALKNOWLEDGE_PERIOD: '2024. 03. 18 - 2026. 09. 30',
@@ -35,4 +35,22 @@ export const KOREAN_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     WORK_GLOBALKNOWLEDGE_CMS_DESCRIPTION:
         '동시접속 1,000명 규모의 실시간 교육 플랫폼 FE 핵심 기능(Zoom Live 연동, 실시간 퀴즈, 게시판) 개발 \n Web SDK 기반 Zoom 라이브 임베딩 연동으로 플랫폼 이탈 없는 원스톱 실시간 강의 환경 구축 \n 동시 접속 트래픽이 집중되는 실시간 퀴즈의 요청 흐름 및 API 최적화 협업을 통해 CloudWatch 기준 ECS 전체 Task 평균 CPU 사용량 80% -> 40%로 절감 \n 제한시간 및 시작 타이밍 동기화가 필요한 퀴즈 인터랙션 로직 안정화 및 디버깅',
     WORK_GLOBALKNOWLEDGE_FLUNTI_SITE: 'https://flunti.io',
+
+    WORK_PROSOFT_NAME: '프로소프트',
+    WORK_PROSOFT_PERIOD: '2023. 02. 06 - 2024. 03. 01',
+    WORK_PROSOFT_LOCATION: '대한민국, 창원',
+    WORK_PROSOFT_ROLE: 'Fullstack Engineer',
+    WORK_PROSOFT_MIGRATION_TITLE: '레거시 솔루션 재설계 및 고도화',
+    WORK_PROSOFT_DBMIGRATION_TITLE: 'DB 전환',
+    WORK_PROSOFT_MIGRATION_DESCRIPTION:
+        '넥사크로 기반 레거시 솔루션을 Vue3 + TypeScript + Pinia 기반으로 재설계 \n 중복 API 호출 제거 및 API 호출을 비동기처리도 최적화하여 응답속도 최대 2배 개선 \n 폼/그리드/검색조건 등 핵심 기능을 모듈화하여 재사용성 강화 \n WebSocket를 이용한 알림기능과 PDF.js, Fabric.js 등을 이용하여 도면 관리 기능 제작\n Vitepress를 이용한 온보딩 문서 제작으로 신규인원의 빠른 온보딩 지원',
+    WORK_PROSOFT_DBMIGRATION_DESCRIPTION: '기존 ORACLE DB 문법의 SQL문을 ANSI 표준의 SQL로 리팩터링 및 MyBatis mapper에 적용 및 테스트',
+
+    WORK_KEYWORDSSTUDIO_NAME: 'Keywords Studio',
+    WORK_KEYWORDSSTUDIO_PERIOD: '2019. 07 - 2022. 01',
+    WORK_KEYWORDSSTUDIO_LOCATION: '일본, 도쿄',
+    WORK_KEYWORDSSTUDIO_ROLE: 'LQA Tester',
+    WORK_KEYWORDSSTUDIO_LQA_TITLE: '게임 LQA 및 온보딩 프로세스 개선',
+    WORK_KEYWORDSSTUDIO_LQA_DESCRIPTION:
+        '다수 프로젝트(5+)LQA 진행 및 출시 완료 \n KR인력이 부족한 상황에서 TF팀 구성 및 온보딩 보조와 테스팅 동시진행 및 온보딩 인원 소요시간 2-3일에서 1일로 단축',
 }

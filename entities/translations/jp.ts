@@ -11,7 +11,7 @@ export const JAPANESE_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     LOCATION: '韓国、ソウル',
     GITHUB: 'https://github.com/B-HS',
     INTRODUCE:
-        'アーキテクチャ設計やデザインシステムなど幅広い開発経験 \n AIを活用した他職種との協力効率化の経験 \n 大規模アプリケーション開発におけるサービスの安定性確保の経験 \n 最適化とDX向上を優先した開発を推進',
+        'アーキテクチャ設計やデザインシステムなど幅広い開発経験 \n AIを活用した自動化（PRレビュー、Docs、ページ生成）による他職種との協力効率化 \n 大規模アプリケーション開発へのサービスの安定性確保の経験 \n 最適化とDX向上を優先した開発を推進',
     WORK_EXPERIENCE: 'Work Experience',
     WORK_GLOBALKNOWLEDGE_NAME: 'Global Knowledge Korea',
     WORK_GLOBALKNOWLEDGE_PERIOD: '2024. 03. 18 - 2026. 09. 30',
@@ -35,4 +35,22 @@ export const JAPANESE_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     WORK_GLOBALKNOWLEDGE_CMS_DESCRIPTION:
         '同時接続1,000人規模のリアルタイム教育プラットフォームにおけるFEコア機能（Zoom Live連携、リアルタイムクイズ、掲示板）の開発\nWeb SDKを活用したZoom Liveのプラットフォーム内埋め込み連携により、シームレスな受講環境を構築\nトラフィックが集中するリアルタイムクイズのリクエストフローおよびAPI最適化連携により、CloudWatch監視基準でECSタスク全体の平均CPU使用率を80％から40％へ削減\n制限時間および開始タイミングの同期が必要なクイズのインタラクションロジックの安定化とデバッグ',
     WORK_GLOBALKNOWLEDGE_FLUNTI_SITE: 'https://flunti.io',
+
+    WORK_PROSOFT_NAME: 'Prosoft',
+    WORK_PROSOFT_PERIOD: '2023. 02. 06 - 2024. 03. 01',
+    WORK_PROSOFT_LOCATION: '韓国、昌原',
+    WORK_PROSOFT_ROLE: 'Fullstack Engineer',
+    WORK_PROSOFT_MIGRATION_TITLE: 'レガシーソリューションの再設計と高度化',
+    WORK_PROSOFT_DBMIGRATION_TITLE: 'DB移行',
+    WORK_PROSOFT_MIGRATION_DESCRIPTION:
+        'NexacroベースのレガシーソリューションをVue3 + TypeScript + Piniaベースに再設計 \n 重複API呼び出しを削除し、非同期API呼び出しを最適化して応答速度を最大2倍改善 \n フォーム/グリッド/検索条件などのコア機能をモジュール化して再利用性を強化 \n WebSocketを使用した通知機能とPDF.js、Fabric.jsなどを使用した図面管理機能の作成 \n Vitepressを使用したオンボーディングドキュメントの作成により、新しいメンバーの迅速なオンボーディングをサポート',
+    WORK_PROSOFT_DBMIGRATION_DESCRIPTION: '既存のORACLE DB構文のSQL文をANSI標準SQLにリファクタリングし、MyBatisマッパーに適用してテスト',
+
+    WORK_KEYWORDSSTUDIO_NAME: 'Keywords Studio',
+    WORK_KEYWORDSSTUDIO_PERIOD: '2019. 07 - 2022. 01',
+    WORK_KEYWORDSSTUDIO_LOCATION: '日本、東京',
+    WORK_KEYWORDSSTUDIO_ROLE: 'LQA Tester',
+    WORK_KEYWORDSSTUDIO_LQA_TITLE: 'ゲームLQAおよびオンボーディングプロセスの改善',
+    WORK_KEYWORDSSTUDIO_LQA_DESCRIPTION:
+        '複数のプロジェクト（5以上）のLQAを実施し、リリースを成功させる \n KR人材が不足している状況で、TFチームの作成とオンボーディング支援およびテストを同時に実施し、オンボーディングにかかる時間を2〜3日から1日に短縮',
 }
