@@ -9,12 +9,15 @@ type ResumeWidget = { lang: LangType }
 export const Resume: FC<ResumeWidget> = ({ lang }) => {
     const t = translator({ lang })
     return (
-        <div className='flex flex-col'>
+        <div className='flex flex-col pb-20'>
             <Introduce lang={lang} />
             <SectionHeader title={t('WORK_EXPERIENCE')} />
             <ResumeSection workName='GLOBALKNOWLEDGE' workList={['FLUNTI', 'DESIGNSYSTEM', 'STUDIO', 'AI', 'CMS']} lang={lang} />
             <ResumeSection workName='PROSOFT' workList={['MIGRATION', 'DBMIGRATION']} lang={lang} />
             <ResumeSection workName='KEYWORDSSTUDIO' workList={['LQA']} lang={lang} />
+            <SectionHeader title={t('SKILLS')} />
+            <SectionHeader title={t('PROJECTS')} />
+            <SectionHeader title={t('ETC')} />
         </div>
     )
 }
