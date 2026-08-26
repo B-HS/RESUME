@@ -1,6 +1,0 @@
-export { ContractWidget } from './contract-widget'
-export { EducationWidget } from './education-widget'
-export { ExperiencesWidget } from './experiences-widget'
-export { IntroduceWidget } from './introduce-widget'
-export { SideProjectWidget } from './sideproject-widget'
-export { SkillsWidget } from './skills-widget'

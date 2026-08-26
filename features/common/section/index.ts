@@ -1,6 +1,0 @@
-export { ProfileLinkElement } from './profile-link-element'
-export { SectionElement } from './section-element'
-export { SectionHeader } from './section-header'
-export { SectionHistoryElement } from './section-history-element'
-export { SectionHistoryHeader } from './section-history-header'
-export { SectionProjectElement } from './section-project-element'
