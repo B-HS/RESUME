@@ -180,3 +180,11 @@ body {
         scroll-behavior: auto !important;
     }
 }
+
+/** When width going down to 430px, resize basic fontsize to 14px from 16px. */
+
+@media (max-width: 435px) {
+    html {
+        font-size: 14px;
+    }
+}

@@ -7,7 +7,7 @@ type LayoutProps = {
 
 const nanumGothic = Nanum_Gothic({
     subsets: ['latin'],
-    weight: ['400', '700'],
+    weight: ['400', '700', '800'],
     variable: '--font-nanum-gothic',
 })
 
