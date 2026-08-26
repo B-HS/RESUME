@@ -1,15 +1,19 @@
-import { TRANSLATIONS, translator } from '@shared/translations'
+import { LangType } from '@shared/translations'
+import { Resume } from '@widgets/resume'
 import { FC } from 'react'
 
 type PageProps = {
-    params: Promise<{ lang: keyof typeof TRANSLATIONS }>
+    params: Promise<{ lang: LangType }>
 }
 
 const Page: FC<PageProps> = async ({ params }) => {
     const { lang } = await params
-    const t = translator({ lang: lang })
 
-    return <main>{t('NAME')}</main>
+    return (
+        <main className='flex flex-col gap-3 p-1.5'>
+            <Resume lang={lang} />
+        </main>
+    )
 }
 
 export default Page
