@@ -4,9 +4,9 @@ import { ExternalLink } from 'lucide-react'
 import Link from 'next/link'
 import { FC } from 'react'
 
-type SectionProps = { lang: LangType; title: string; workName: string; workList: string[]; isFirst?: boolean }
+type SectionProps = { lang: LangType; workName: string; workList: string[] }
 
-export const ResumeSection: FC<SectionProps> = ({ title, lang, workList, workName, isFirst }) => {
+export const ResumeSection: FC<SectionProps> = ({ lang, workList, workName }) => {
     type WorkWords = (typeof WORDS)[number]
     const t = translator({ lang })
 

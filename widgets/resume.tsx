@@ -12,15 +12,9 @@ export const Resume: FC<ResumeWidget> = ({ lang }) => {
         <div className='flex flex-col'>
             <Introduce lang={lang} />
             <SectionHeader title={t('WORK_EXPERIENCE')} />
-            <ResumeSection
-                isFirst
-                workName='GLOBALKNOWLEDGE'
-                workList={['FLUNTI', 'DESIGNSYSTEM', 'STUDIO', 'AI', 'CMS']}
-                lang={lang}
-                title={t('WORK_EXPERIENCE')}
-            />
-            <ResumeSection workName='PROSOFT' workList={['MIGRATION', 'DBMIGRATION']} lang={lang} title={t('WORK_EXPERIENCE')} />
-            <ResumeSection workName='KEYWORDSSTUDIO' workList={['LQA']} lang={lang} title={t('WORK_EXPERIENCE')} />
+            <ResumeSection workName='GLOBALKNOWLEDGE' workList={['FLUNTI', 'DESIGNSYSTEM', 'STUDIO', 'AI', 'CMS']} lang={lang} />
+            <ResumeSection workName='PROSOFT' workList={['MIGRATION', 'DBMIGRATION']} lang={lang} />
+            <ResumeSection workName='KEYWORDSSTUDIO' workList={['LQA']} lang={lang} />
         </div>
     )
 }
