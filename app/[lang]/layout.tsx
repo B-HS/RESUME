@@ -19,7 +19,7 @@ const Layout: FC<PropsWithChildren<LayoutProps>> = async ({ params, children }) 
 
     return (
         <html lang={lang} className={nanumGothic.variable}>
-            <body className='max-w-md mx-auto min-h-dvh w-full antialiased'>
+            <body className='max-w-3xl mx-auto min-h-dvh w-full antialiased'>
                 {children}
                 <VirtualScroll />
                 <GoToTop />

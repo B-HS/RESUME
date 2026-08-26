@@ -8,7 +8,9 @@ export const ENGLISH_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     JOB_TITLE: 'Frontend Engineer / AI Engineer',
     BLOG: 'https://blog.gumyo.net',
     EMAIL: 'hs@gumyo.net',
-    LOCATION: '韓国, ソウル',
+    LOCATION: 'Seoul, South Korea',
     GITHUB: 'https://github.com/B-HS',
-    INTRODUCE: ''
+    INTRODUCE:
+        'Broad engineering scope with architecture & design systems \n Enhanced cross-functional collaboration using modern AI \n Focused on performance optimization and better DX',
+    WORK_EXPERIENCE: 'Work Experience',
 }

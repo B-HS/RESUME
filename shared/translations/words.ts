@@ -8,6 +8,7 @@ export const WORDS = [
     'LOCATION',
     'GITHUB',
     'BLOG',
-    'INTRODUCE'
+    'INTRODUCE',
+    'WORK_EXPERIENCE',
     
 ] as const
