@@ -1,6 +1,5 @@
 import { Nanum_Gothic } from 'next/font/google'
 import { FC, PropsWithChildren } from 'react'
-
 import { VirtualScroll } from '@features/theme/virtual-scroll'
 import { GoToTop } from '@widgets/layout/go-to-top'
 

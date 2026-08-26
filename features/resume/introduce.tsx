@@ -1,7 +1,5 @@
 import { ResumeHeaderList } from '@features/resume/header-list'
-import { LangType, translator } from '@shared/translations'
-import { Mail } from 'lucide-react'
-import Link from 'next/link'
+import { LangType, translator } from '@entities/translations'
 import { FC } from 'react'
 
 type IntroduceProps = { lang: LangType }

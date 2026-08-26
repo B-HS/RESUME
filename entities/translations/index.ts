@@ -11,11 +11,13 @@ const TRANSLATIONS = {
     EN: ENGLISH_TRANSLATIONS,
 }
 
+const EXCEPTION_LANGUAGE_WORD = ["favicon.ico"]
+
 const translator =
     ({ lang }: { lang: LangType }) =>
     (word: (typeof WORDS)[number]) => {
         const language = lang.toUpperCase() as keyof typeof TRANSLATIONS
-        if (!TRANSLATIONS[language]) console.warn(`Language ${language} is not supported.`)
+        if (!TRANSLATIONS[language] && !EXCEPTION_LANGUAGE_WORD.includes(word)) console.warn(`Language ${language} is not supported.`)
         return (TRANSLATIONS[language] || 'ko')[word] || `NO_TRANSLATION_FOR_${word}`
     }
 

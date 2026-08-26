@@ -1,4 +1,4 @@
-import { LangType } from '@shared/translations'
+import { LangType } from '@entities/translations'
 import { Resume } from '@widgets/resume'
 import { FC } from 'react'
 

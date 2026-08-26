@@ -10,5 +10,4 @@ export const WORDS = [
     'BLOG',
     'INTRODUCE',
     'WORK_EXPERIENCE',
-    
 ] as const

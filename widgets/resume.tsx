@@ -1,5 +1,5 @@
 import { Introduce } from '@features/resume/introduce'
-import { LangType } from '@shared/translations'
+import { LangType } from '@entities/translations'
 import { Separator } from '@shared/ui/separator'
 import { FC, PropsWithChildren } from 'react'
 

@@ -1,6 +1,6 @@
 import { cn } from '@shared/lib/utils'
-import { LangType, translator } from '@shared/translations'
-import { WORDS } from '@shared/translations/words'
+import { LangType, translator } from '@entities/translations'
+import { WORDS } from '@entities/translations/words'
 import { ExternalLinkIcon, MailIcon } from 'lucide-react'
 import Link from 'next/link'
 import { FC, Fragment } from 'react'
@@ -11,6 +11,7 @@ type ResumeHeaderList = {
     items: (Uppercase<(typeof WORDS)[number]> | Lowercase<(typeof WORDS)[number]>)[]
     isFullWidth?: boolean
 }
+
 export const ResumeHeaderList: FC<ResumeHeaderList> = ({ type, items, lang, isFullWidth }) => {
     const LinkIcon = type === 'mail' ? MailIcon : ExternalLinkIcon
     const t = translator({ lang })
