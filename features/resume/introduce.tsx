@@ -14,24 +14,26 @@ export const Introduce: FC<IntroduceProps> = ({ lang }) => {
                         {t('FIRST_NAME')} {t('LAST_NAME')}
                     </h1>
                     {lang !== 'en' && (
-                        <p className='flex items-center gap-0.5 text-xs text-muted-foreground font-semibold'>
+                        <p className='flex items-center gap-0.5 text-sm text-muted-foreground font-semibold'>
                             <span>{t('LAST_NAME_TRANSLATION')}</span>
                             <span>{t('FIRST_NAME_TRANSLATION')}</span>
                         </p>
                     )}
                 </div>
             </div>
-            <div className='flex flex-wrap gap-1.25 items-center'>
+            <div className='flex flex-wrap gap-1.25 items-center py-0.75'>
                 <ResumeHeaderList type='text' lang={lang} items={['JOB_TITLE', 'LOCATION']} />
                 <ResumeHeaderList type='mail' lang={lang} items={['EMAIL']} isFullWidth />
                 <ResumeHeaderList type='link' lang={lang} items={['GITHUB', 'BLOG']} />
             </div>
-            <ul className='flex flex-wrap gap-0.5 text-sm font-medium'>
+            <ul className='flex flex-wrap gap-x-3 gap-y-0.5 text-sm font-medium'>
                 {t('INTRODUCE')
                     .replace(/\n/g, '<br />')
                     .split('<br />')
                     .map((line, idx) => (
-                        <li key={idx}>• {line}</li>
+                        <li className='w-full1' key={idx}>
+                            • {line}
+                        </li>
                     ))}
             </ul>
         </div>

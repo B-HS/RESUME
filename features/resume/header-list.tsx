@@ -16,7 +16,7 @@ export const ResumeHeaderList: FC<ResumeHeaderList> = ({ type, items, lang, isFu
     const LinkIcon = type === 'mail' ? MailIcon : ExternalLinkIcon
     const t = translator({ lang })
     return (
-        <ul className={cn('font-medium text-xs flex items-center', isFullWidth && 'w-full')}>
+        <ul className={cn('font-medium text-sm flex items-center', isFullWidth && 'w-full')}>
             {items.map((key, idx) => {
                 return (
                     <Fragment key={key}>
@@ -32,7 +32,7 @@ export const ResumeHeaderList: FC<ResumeHeaderList> = ({ type, items, lang, isFu
                         ) : (
                             <li>{t(key as (typeof WORDS)[number])}</li>
                         )}
-                        {idx < items.length - 1 && <span className='text-muted-foreground px-0.75'>•</span>}
+                        {idx < items.length - 1 && <span className='text-muted-foreground px-1'>•</span>}
                     </Fragment>
                 )
             })}

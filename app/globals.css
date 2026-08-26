@@ -55,7 +55,7 @@
     --chart-5: var(--palette-amber-769);
 
     --font-sans:
-        var(--font-nanum-gothic), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+        var(--font-noto-sans-kr), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
         'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 
@@ -134,7 +134,7 @@
     --color-chart-4: var(--chart-4);
     --color-chart-5: var(--chart-5);
 
-    --font-sans: var(--font-sans);
+    --font-noto-sans-kr: var(--font-noto-sans-kr);
     --font-mono: var(--font-mono);
 
     --radius-sm: calc(var(--radius) - 4px);

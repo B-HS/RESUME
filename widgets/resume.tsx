@@ -10,8 +10,9 @@ type SectionProps = PropsWithChildren<{ lang: LangType; title: string }>
 const Section: FC<SectionProps> = ({ children, title }) => {
     return (
         <div>
-            <h2 className='text-lg font-bold px-1.5 pt-3'>{title}</h2>
+            <h2 className='text-lg font-extrabold px-1.5 pt-3'>{title}</h2>
             <Separator />
+            <div>{children}</div>
         </div>
     )
 }
@@ -23,7 +24,7 @@ export const Resume: FC<ResumeWidget> = ({ lang }) => {
             <Introduce lang={lang} />
 
             <Section lang={lang} title={t('WORK_EXPERIENCE')}>
-                asdf
+                <div className='p-1.5 text-md font-semibold'>{t('WORK_GLOBALKNOWLEDGE_NAME')}</div>
             </Section>
         </div>
     )

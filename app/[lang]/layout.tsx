@@ -1,4 +1,4 @@
-import { Nanum_Gothic } from 'next/font/google'
+import { Nanum_Gothic, Noto_Sans_KR } from 'next/font/google'
 import { FC, PropsWithChildren } from 'react'
 import { VirtualScroll } from '@features/theme/virtual-scroll'
 import { GoToTop } from '@widgets/layout/go-to-top'
@@ -7,10 +7,9 @@ type LayoutProps = {
     params: Promise<{ lang: string }>
 }
 
-const nanumGothic = Nanum_Gothic({
+const nanumGothic = Noto_Sans_KR({
     subsets: ['latin'],
-    weight: ['400', '700', '800'],
-    variable: '--font-nanum-gothic',
+    variable: '--font-noto-sans-kr',
 })
 
 const Layout: FC<PropsWithChildren<LayoutProps>> = async ({ params, children }) => {
