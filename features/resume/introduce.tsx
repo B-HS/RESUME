@@ -24,7 +24,7 @@ export const Introduce: FC<IntroduceProps> = ({ lang }) => {
                 </div>
                 <ResumeHeaderList type='text' lang={lang} items={['JOB_TITLE', 'LOCATION', 'BIRTHDAY']} />
             </div>
-            <div className='flex flex-wrap gap-1.25 items-center py-0.25'>
+            <div className='flex flex-wrap gap-1.25 items-center py-px'>
                 <ResumeHeaderList type='mail' lang={lang} items={['EMAIL']} isFullWidth />
                 <ResumeHeaderList type='link' lang={lang} items={['GITHUB', 'BLOG']} />
             </div>

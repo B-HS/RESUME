@@ -19,7 +19,7 @@ export const ResumeHeaderList: FC<ResumeHeaderList> = ({ type, items, lang, isFu
         <ul className={cn('font-medium text-sm flex items-center', isFullWidth && 'w-full')}>
             {items.map((key, idx) => {
                 return (
-                    <Fragment key={key}>
+                    <li key={key}>
                         {['link', 'mail'].includes(type) ? (
                             <Link
                                 target='_blank'
@@ -30,10 +30,10 @@ export const ResumeHeaderList: FC<ResumeHeaderList> = ({ type, items, lang, isFu
                                 {t(key as (typeof WORDS)[number])}
                             </Link>
                         ) : (
-                            <li>{t(key as (typeof WORDS)[number])}</li>
+                            t(key as (typeof WORDS)[number])
                         )}
                         {idx < items.length - 1 && <span className='text-muted-foreground px-1'>•</span>}
-                    </Fragment>
+                    </li>
                 )
             })}
         </ul>

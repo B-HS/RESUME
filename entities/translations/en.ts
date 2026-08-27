@@ -39,6 +39,11 @@ export const ENGLISH_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     WORK_GLOBALKNOWLEDGE_CMS_DESCRIPTION:
         'Developed core FE features (embedded Zoom Live, real-time timed quiz, and community boards) for a live training platform supporting 1,000+ concurrent users \n Integrated Zoom Web SDK directly into the platform to provide a seamless, in-app live lecture experience \n Collaborated on API and client request optimization during quiz traffic spikes, reducing average ECS Task CPU utilization from 80% to 40% on CloudWatch \n Engineered and stabilized synchronized state management and timer logic for scheduled quiz evaluations',
     WORK_GLOBALKNOWLEDGE_FLUNTI_SITE: 'https://flunti.io',
+    WORK_GLOBALKNOWLEDGE_FLUNTI_SKILLS: 'Next.js|React|Tailwind|TanStack Query|ECS',
+    WORK_GLOBALKNOWLEDGE_DESIGNSYSTEM_SKILLS: 'Nextjs|RadixUI|Tailwind|StoryBook',
+    WORK_GLOBALKNOWLEDGE_STUDIO_SKILLS: 'Next.js|Drizzle|Docker|EC2',
+    WORK_GLOBALKNOWLEDGE_AI_SKILLS: 'Claude code',
+    WORK_GLOBALKNOWLEDGE_CMS_SKILLS: 'React|Tailwind|TanStack Query',
 
     WORK_PROSOFT_NAME: 'Prosoft',
     WORK_PROSOFT_PERIOD: '23. 02. 06 - 24. 03. 01',
@@ -50,6 +55,8 @@ export const ENGLISH_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
         'Re-architected a legacy Nexacro-based solution into a Vue3 + TypeScript + Pinia-based solution \n Removed redundant API calls and optimized asynchronous API calls, improving response time by up to 2x \n Modularized core features such as forms, grids, and search conditions for better reusability \n Implemented notification features using WebSocket and document management using PDF.js and Fabric.js \n Created onboarding documentation using Vitepress to facilitate rapid onboarding of new team members',
     WORK_PROSOFT_DBMIGRATION_DESCRIPTION:
         'Refactored existing ORACLE DB SQL statements to ANSI standard SQL and applied them to MyBatis mappers for testing',
+    WORK_PROSOFT_MIGRATION_SKILLS: 'SpringBoot|Vue|Pinia',
+    WORK_PROSOFT_DBMIGRATION_SKILLS: 'MyBatis|OracleDB|MariaDB|JAVA',
 
     WORK_KEYWORDSSTUDIO_NAME: 'Keywords Studio',
     WORK_KEYWORDSSTUDIO_PERIOD: '19. 07 - 22. 01',
@@ -58,4 +65,5 @@ export const ENGLISH_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     WORK_KEYWORDSSTUDIO_LQA_TITLE: 'Game LQA and Onboarding Process Improvement',
     WORK_KEYWORDSSTUDIO_LQA_DESCRIPTION:
         'Conducted LQA for multiple projects (5+) and successfully released them \n Assisted in onboarding and testing simultaneously due to a shortage of KR personnel, reducing onboarding time from 2-3 days to 1 day',
+    WORK_KEYWORDSSTUDIO_LQA_SKILLS: 'Redmine|MS Excel|JIRA',
 }
