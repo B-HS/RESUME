@@ -11,7 +11,7 @@ export const ENGLISH_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     LOCATION: 'Seoul, South Korea',
     GITHUB: 'https://github.com/B-HS',
     INTRODUCE:
-        'Broad engineering scope with architecture & design systems \n Enhanced cross-functional collaboration using AI-driven automation (PR review, docs, page generation) \n Experienced in large-scale application development for stability \n Focused on performance optimization and better DX',
+        'Frontend architecture design \n Design system development and documentation \n Reduced load time from 350ms -> 90ms through data caching optimization \n Reduced feature delivery time from 5 days -> 1.5 days through AI automation \n Reduced debugging time from 1 day -> half a day \n Service stabilization for 1,000 concurrent users',
     BIRTHDAY: '95. 07. 01',
     WORK_EXPERIENCE: 'Work Experience',
     SKILLS: 'Skills',
@@ -29,15 +29,15 @@ export const ENGLISH_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     WORK_GLOBALKNOWLEDGE_CMS_TITLE: 'Real-time Live Classroom Platform',
 
     WORK_GLOBALKNOWLEDGE_FLUNTI_DESCRIPTION:
-        'Architected end-to-end FE architecture for a SaaS platform and operated 15+ enterprise client sites \n Unified TanStack Query and Next.js Fetch API cache to improve DX, cutting page load time from 350ms down to as low as 90ms \n Assisted in designing proxy-layer caching and enhanced the logic, improving proxy-layer base-info load speed by 50% \n Designed and implemented Metadata/JSON-LD Helper for SEO optimization',
+        'Led frontend architecture and delivery for a SaaS platform serving 15+ enterprise sites \n Integrated TanStack Query and Next.js Fetch API caching to improve DX and reduce page load time from 350ms -> 90ms \n Optimized proxy-layer data caching, reducing total reference-data load time from 100ms -> 65ms \n Built reusable Metadata and JSON-LD helpers for SEO',
     WORK_GLOBALKNOWLEDGE_DESIGNSYSTEM_DESCRIPTION:
-        'Collaborated with designer, designed and implemented the design system architecture and built 20+ reusable components \n Implemented Storybook and developed a custom feedback plugin for Storybook \n Built and deployed a documentation site with Next.js and Storybook \n Ensured UI consistency across sites and significantly improved DX',
+        'Designed and implemented a React-based component library, collaborating with a designer to build 20+ reusable components \n Adopted Storybook and developed a feedback plugin \n Built and deployed a design system documentation site with Next.js and Storybook \n Ensured UI consistency across sites and improved development efficiency',
     WORK_GLOBALKNOWLEDGE_STUDIO_DESCRIPTION:
-        'Architected, built, and deployed the platform helper site based on the design system for AI-driven development \n Engineered page-generation prompts and automated pipelines, boosting development speed by 300% \n Built an HTML mock generator, stepper-based guide pages, and an AI feasibility bot to streamline cross-functional collaboration',
+        'Designed, developed, and deployed a design-system-based platform helper site for AI-driven development \n Designed and implemented page-generation prompts and automated pipelines, reducing average feature development time from 5 days -> 1.5 days \n Built an HTML mock generator, stepper-based guide pages, and an AI bot for assessing feature feasibility to support cross-functional collaboration',
     WORK_GLOBALKNOWLEDGE_AI_DESCRIPTION:
-        'Engineered AI prompt frameworks and documentation for AI-driven development, increasing development/debugging speed by 100% \n Analyzed existing conventions and architecture patterns to author and deploy 15+ skills and 6+ commands \n Built an automated PR analysis pipeline to streamline and automate code reviews, achieving ~90% detection accuracy',
+        'Designed and applied documentation and prompts for AI-driven frontend development, reducing average debugging time from 1 day -> half a day \n Analyzed existing conventions and architecture patterns to create and distribute 15+ skills and 6+ commands \n Built a PR analysis and automation pipeline, reproducing approximately 90% of the issues identified in human review comments through comparative validation',
     WORK_GLOBALKNOWLEDGE_CMS_DESCRIPTION:
-        'Developed core FE features (embedded Zoom Live, real-time timed quiz, and community boards) for a live training platform supporting 1,000+ concurrent users \n Integrated Zoom Web SDK directly into the platform to provide a seamless, in-app live lecture experience \n Collaborated on API and client request optimization during quiz traffic spikes, reducing average ECS Task CPU utilization from 80% to 40% on CloudWatch \n Engineered and stabilized synchronized state management and timer logic for scheduled quiz evaluations',
+        'Developed core frontend features including Zoom Live integration, real-time quizzes, and community boards for a live training platform supporting 1,000 concurrent users \n Embedded live lectures in the platform with Zoom Web SDK, providing a seamless one-stop learning experience \n Optimized request flow and APIs during real-time quiz traffic spikes, reducing ECS Task average CPU utilization from 80% -> 40% based on CloudWatch \n Stabilized and debugged quiz interaction logic requiring synchronized time limits and start times',
     WORK_GLOBALKNOWLEDGE_FLUNTI_SITE: 'https://flunti.io',
     WORK_GLOBALKNOWLEDGE_FLUNTI_SKILLS: 'Next.js|React|Tailwind|TanStack Query|ECS',
     WORK_GLOBALKNOWLEDGE_DESIGNSYSTEM_SKILLS: 'Nextjs|RadixUI|Tailwind|StoryBook',
@@ -52,9 +52,9 @@ export const ENGLISH_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     WORK_PROSOFT_MIGRATION_TITLE: 'Legacy Solution Re-architecture and Enhancement',
     WORK_PROSOFT_DBMIGRATION_TITLE: 'DB Migration',
     WORK_PROSOFT_MIGRATION_DESCRIPTION:
-        'Re-architected a legacy Nexacro-based solution into a Vue3 + TypeScript + Pinia-based solution \n Removed redundant API calls and optimized asynchronous API calls, improving response time by up to 2x \n Modularized core features such as forms, grids, and search conditions for better reusability \n Implemented notification features using WebSocket and document management using PDF.js and Fabric.js \n Created onboarding documentation using Vitepress to facilitate rapid onboarding of new team members',
+        'Re-architected a Nexacro-based legacy solution with Vue 3, TypeScript, and Pinia \n Eliminated redundant API calls and optimized API requests through asynchronous processing, improving response speed by up to 2x \n Modularized core features including forms, grids, and search conditions to improve reusability \n Built WebSocket notifications and drawing management features with PDF.js and Fabric.js \n Created VitePress-based onboarding documentation to support rapid onboarding for new team members',
     WORK_PROSOFT_DBMIGRATION_DESCRIPTION:
-        'Refactored existing ORACLE DB SQL statements to ANSI standard SQL and applied them to MyBatis mappers for testing',
+        'Refactored SQL statements written in Oracle DB syntax to ANSI-standard SQL, then applied and tested them in MyBatis mappers',
     WORK_PROSOFT_MIGRATION_SKILLS: 'SpringBoot|Vue|Pinia',
     WORK_PROSOFT_DBMIGRATION_SKILLS: 'MyBatis|OracleDB|MariaDB|JAVA',
 
@@ -64,6 +64,6 @@ export const ENGLISH_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     WORK_KEYWORDSSTUDIO_ROLE: 'LQA Tester',
     WORK_KEYWORDSSTUDIO_LQA_TITLE: 'Game LQA and Onboarding Process Improvement',
     WORK_KEYWORDSSTUDIO_LQA_DESCRIPTION:
-        'Conducted LQA for multiple projects (5+) and successfully released them \n Assisted in onboarding and testing simultaneously due to a shortage of KR personnel, reducing onboarding time from 2-3 days to 1 day',
+        'Conducted LQA for 7 projects and supported their successful releases \n Formed a task force amid a shortage of Korean-language personnel, supporting onboarding while testing in parallel and reducing onboarding time from 2-3 days -> 1 day',
     WORK_KEYWORDSSTUDIO_LQA_SKILLS: 'Redmine|MS Excel|JIRA',
 }

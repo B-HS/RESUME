@@ -11,7 +11,7 @@ export const JAPANESE_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     LOCATION: '韓国、ソウル',
     GITHUB: 'https://github.com/B-HS',
     INTRODUCE:
-        'アーキテクチャ設計やデザインシステムなど幅広い開発経験 \n AIを活用した自動化（PRレビュー、Docs、ページ生成）による他職種との協力効率化 \n 大規模アプリケーション開発へのサービスの安定性確保の経験 \n 最適化とDX向上を優先した開発を推進',
+        'フロントエンドアーキテクチャ設計 \n デザインシステムの構築とドキュメント化 \n データキャッシュの最適化により読み込み時間を350ms -> 90msに短縮 \n AI開発自動化により機能開発を5日 -> 1.5日に短縮 \n デバッグ時間を1日 -> 半日に短縮 \n 同時接続1,000人規模のサービス安定化',
     BIRTHDAY: '95. 07. 01',
     WORK_EXPERIENCE: 'Work Experience',
     SKILLS: 'Skills',
@@ -29,15 +29,15 @@ export const JAPANESE_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     WORK_GLOBALKNOWLEDGE_CMS_TITLE: 'リアルタイムクラス教育システム',
 
     WORK_GLOBALKNOWLEDGE_FLUNTI_DESCRIPTION:
-        'SaaSベースのFE全体のアーキテクチャーと開発を主導し15以上の企業サイトを運営\n TanStack Queryと Next.js Fetch API キャッシュ統合でDX向上およびページロード速度を350msから最大90msまで短縮 \n proxy-layerキャッシング設計補助および高度化でproxy-layer基準情報ロード速度50％向上 \n SEOのためのMetadata/JSON-LD Helper設計および適用',
+        'SaaSプラットフォームのフロントエンドアーキテクチャ設計と開発を主導し、15社以上の企業サイトを運用 \n TanStack QueryとNext.js Fetch APIのキャッシュを統合し、DXを向上させ、ページの読み込み時間を350ms -> 90msに短縮 \n プロキシレイヤーのデータキャッシュ最適化により、基準情報全体の読み込み時間を100ms -> 65msに短縮 \n SEO向けのMetadataおよびJSON-LDヘルパーを設計・実装',
     WORK_GLOBALKNOWLEDGE_DESIGNSYSTEM_DESCRIPTION:
-        'Reactベースのコンポーネントライブラリシステムを設計および構築、デザイナーと協力して20種以上のコンポーネントを開発 \n Storybookを適用し、フィードバックプラグインを開発 \n Next.jsとStorybookを使用してデザインシステムドキュメントサイトの構築およびデプロイ \n 将来使用されるサイトのデザインの一貫性を担保し、開発効率を向上',
+        'Reactベースのコンポーネントライブラリを設計・実装し、デザイナーと協業して再利用可能なコンポーネントを20種類以上開発 \n Storybookを導入し、フィードバックプラグインを開発 \n Next.jsとStorybookを用いたデザインシステムのドキュメントサイトを構築・デプロイ \n サイト全体のUI一貫性を確保し、開発効率を向上',
     WORK_GLOBALKNOWLEDGE_STUDIO_DESCRIPTION:
-        'AI Drivenのためのデザインシステムベースのプラットフォームヘルパーサイトの設計、開発、デプロイ \n ページ生成プロンプトとパイプラインの設計および構築により、機能開発速度が300％向上 \n その他、他部署との協力のためのHTMLモックジェネレーター、ガイド文書用のステッパーを含むページ、機能生成可能性判断のためのAIボットなどを実装',
+        'AI駆動開発のためのデザインシステムベースのプラットフォームヘルパーサイトを設計・開発・デプロイ \n ページ生成プロンプトと自動化パイプラインを設計・実装し、機能開発期間を平均5日 -> 1.5日に短縮 \n 部門間協業を支援するHTMLモック生成機、ガイド文書用ステッパーページ、機能実現可能性を判断するAIボットを実装',
     WORK_GLOBALKNOWLEDGE_AI_DESCRIPTION:
-        'フロントエンド AI DrivenのためのAI文書化およびプロンプト設計と適用により、機能開発/デバッグ速度を100％向上 \n 既存のコンベンションとアーキテクチャパターンなどを全体的に分析し、Skill（15以上）とCommand（6以上）を多数作成して文書展開 \n 自動PRレビューのためのPR全体分析およびPR自動化により、機械検出率約90％を達成',
+        'AI駆動フロントエンド開発のためのドキュメントとプロンプトを設計・適用し、デバッグ時間を平均1日 -> 半日に短縮 \n 既存のコンベンションとアーキテクチャパターンを全体分析し、15以上のSkillと6以上のCommandを作成・ドキュメント展開 \n PR分析と自動化パイプラインを実装し、人が作成したレビューコメントとの比較検証で人が検出した項目の約90%を再現',
     WORK_GLOBALKNOWLEDGE_CMS_DESCRIPTION:
-        '同時接続1,000人規模のリアルタイム教育プラットフォームにおけるFEコア機能（Zoom Live連携、リアルタイムクイズ、掲示板）の開発\nWeb SDKを活用したZoom Liveのプラットフォーム内埋め込み連携により、シームレスな受講環境を構築\nトラフィックが集中するリアルタイムクイズのリクエストフローおよびAPI最適化連携により、CloudWatch監視基準でECSタスク全体の平均CPU使用率を80％から40％へ削減\n制限時間および開始タイミングの同期が必要なクイズのインタラクションロジックの安定化とデバッグ',
+        '同時接続1,000人規模のリアルタイム教育プラットフォームで、Zoom Live連携、リアルタイムクイズ、掲示板などの主要フロントエンド機能を開発 \n Zoom Web SDKでライブ講義をプラットフォームに埋め込み、サービスから離脱せずに受講できるワンストップ環境を構築 \n リアルタイムクイズのトラフィック集中時にリクエストフローとAPIを最適化し、CloudWatch基準でECS Task平均CPU使用率を80% -> 40%に削減 \n 制限時間と開始時点の同期が必要なクイズインタラクションロジックを安定化し、デバッグを実施',
     WORK_GLOBALKNOWLEDGE_FLUNTI_SITE: 'https://flunti.io',
     WORK_GLOBALKNOWLEDGE_FLUNTI_SKILLS: 'Next.js|React|Tailwind|TanStack Query|ECS',
     WORK_GLOBALKNOWLEDGE_DESIGNSYSTEM_SKILLS: 'Nextjs|RadixUI|Tailwind|StoryBook',
@@ -52,8 +52,8 @@ export const JAPANESE_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     WORK_PROSOFT_MIGRATION_TITLE: 'レガシーソリューション再設計と高度化',
     WORK_PROSOFT_DBMIGRATION_TITLE: 'DB移行',
     WORK_PROSOFT_MIGRATION_DESCRIPTION:
-        'NexacroベースのレガシーソリューションをVue3 + TypeScript + Piniaベースに再設計 \n 重複API呼び出しを削除し、非同期API呼び出しを最適化して応答速度を最大2倍改善 \n フォーム/グリッド/検索条件などのコア機能をモジュール化して再利用性を強化 \n WebSocketを使用した通知機能とPDF.js、Fabric.jsなどを使用した図面管理機能の作成 \n Vitepressを使用したオンボーディングドキュメントの作成により、新しいメンバーの迅速なオンボーディングをサポート',
-    WORK_PROSOFT_DBMIGRATION_DESCRIPTION: '既存のORACLE DB構文のSQL文をANSI標準SQLにリファクタリングし、MyBatisマッパーに適用してテスト',
+        'NexacroベースのレガシーソリューションをVue 3、TypeScript、Piniaベースに再設計 \n 重複するAPI呼び出しを削除し、API呼び出しを非同期処理で最適化して応答速度を最大2倍改善 \n フォーム、グリッド、検索条件などの主要機能をモジュール化し、再利用性を強化 \n WebSocketによる通知機能とPDF.js、Fabric.jsベースの図面管理機能を実装 \n VitePressベースのオンボーディングドキュメントを作成し、新規メンバーの迅速なオンボーディングを支援',
+    WORK_PROSOFT_DBMIGRATION_DESCRIPTION: '既存のOracle DB構文で書かれたSQL文をANSI標準SQLにリファクタリングし、MyBatis Mapperに適用してテスト',
     WORK_PROSOFT_MIGRATION_SKILLS: 'SpringBoot|Vue|Pinia',
     WORK_PROSOFT_DBMIGRATION_SKILLS: 'MyBatis|OracleDB|MariaDB|JAVA',
 
@@ -63,6 +63,6 @@ export const JAPANESE_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     WORK_KEYWORDSSTUDIO_ROLE: 'LQA Tester',
     WORK_KEYWORDSSTUDIO_LQA_TITLE: 'ゲームLQAおよびオンボーディングプロセスの改善',
     WORK_KEYWORDSSTUDIO_LQA_DESCRIPTION:
-        '複数のプロジェクト（5以上）のLQAを実施し、リリースを成功させる \n KR人材が不足している状況で、TFチームの作成とオンボーディング支援およびテストを同時に実施し、オンボーディングにかかる時間を2〜3日から1日に短縮',
+        '7件のプロジェクトでLQAを実施し、リリース完了を支援 \n 韓国語人材が不足する状況でTFチームを編成し、オンボーディング支援とテストを並行して実施して、オンボーディング期間を2-3日 -> 1日に短縮',
     WORK_KEYWORDSSTUDIO_LQA_SKILLS: 'Redmine|MS Excel|JIRA',
 }
