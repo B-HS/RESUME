@@ -10,6 +10,9 @@ export const ENGLISH_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     EMAIL: 'hs@gumyo.net',
     LOCATION: 'Seoul, South Korea',
     GITHUB: 'https://github.com/B-HS',
+    SEO_TITLE: 'Hyunseok Byun Resume | Frontend Engineer',
+    SEO_DESCRIPTION:
+        'Resume of Hyunseok Byun, a frontend engineer experienced in Next.js, React, Vue, Spring Boot, design systems, performance optimization, AI-assisted development automation, and cloud infrastructure.',
     INTRODUCE:
         'Frontend architecture design \n Design system development and documentation \n Reduced load time from 350ms -> 90ms through data caching optimization \n Reduced feature delivery time from 5 days -> 1.5 days through AI automation \n Reduced debugging time from 1 day -> half a day \n Service stabilization for 1,000 concurrent users',
     BIRTHDAY: '95. 07. 01',

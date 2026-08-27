@@ -8,6 +8,8 @@ export const WORDS = [
     'LOCATION',
     'GITHUB',
     'BLOG',
+    'SEO_TITLE',
+    'SEO_DESCRIPTION',
     'INTRODUCE',
     'BIRTHDAY',
     'WORK_EXPERIENCE',

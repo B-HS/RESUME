@@ -10,6 +10,9 @@ export const JAPANESE_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     EMAIL: 'hs@gumyo.net',
     LOCATION: '韓国、ソウル',
     GITHUB: 'https://github.com/B-HS',
+    SEO_TITLE: 'ビョン・ヒョンソクの履歴書 | Frontend Engineer',
+    SEO_DESCRIPTION:
+        'フロントエンドエンジニア、ビョン・ヒョンソクの履歴書です。Next.js、React、Vue、Spring Boot、デザインシステム、性能最適化、AI開発自動化、クラウド運用の経験を紹介します。',
     INTRODUCE:
         'フロントエンドアーキテクチャ設計 \n デザインシステムの構築とドキュメント化 \n データキャッシュの最適化により読み込み時間を350ms -> 90msに短縮 \n AI開発自動化により機能開発を5日 -> 1.5日に短縮 \n デバッグ時間を1日 -> 半日に短縮 \n 同時接続1,000人規模のサービス安定化',
     BIRTHDAY: '95. 07. 01',

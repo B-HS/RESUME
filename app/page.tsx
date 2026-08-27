@@ -1,2 +1,3 @@
-import { redirect } from 'next/navigation'
-export default () => redirect('/ko')
+import { permanentRedirect } from 'next/navigation'
+
+export default () => permanentRedirect('/ko')

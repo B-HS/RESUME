@@ -1,12 +1,14 @@
-import { MetadataRoute } from 'next'
+import type { MetadataRoute } from 'next'
+import { SITE_URL } from '@shared/constants/seo'
 
-export default () => {
-    const siteUrl = 'https://resume.gumyo.net'
+const robots = () => {
     return {
         rules: {
             userAgent: '*',
             allow: '/',
         },
-        sitemap: `${siteUrl}/sitemap.xml`,
+        sitemap: `${SITE_URL}/sitemap.xml`,
     } satisfies MetadataRoute.Robots
 }
+
+export default robots

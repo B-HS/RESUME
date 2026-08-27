@@ -10,6 +10,9 @@ export const KOREAN_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     EMAIL: 'hs@gumyo.net',
     LOCATION: '대한민국, 서울',
     GITHUB: 'https://github.com/B-HS',
+    SEO_TITLE: '변현석 이력서 | Frontend Engineer',
+    SEO_DESCRIPTION:
+        '프론트엔드 엔지니어 변현석의 이력서입니다. Next.js, React, Vue, Spring Boot 기반 개발, 디자인 시스템 구축, 성능 최적화, AI 개발 자동화 및 클라우드 운영 경험을 소개합니다.',
     INTRODUCE:
         '프론트엔드 아키텍처 설계 \n 디자인 시스템 구축 및 문서화 \n 데이터 캐싱 최적화로 로딩 350ms -> 90ms 단축 \n AI 개발 자동화로 기능 개발 5일 -> 1.5일 단축 \n 디버깅 시간 1일 -> 반나절 단축 \n 1,000명 동시 접속 서비스 안정화',
     BIRTHDAY: '95. 07. 01',

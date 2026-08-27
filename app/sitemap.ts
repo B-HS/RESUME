@@ -1,13 +1,16 @@
-export default async () => {
-    const siteUrl = 'https://resume.gumyo.net'
-    const langs = ['ko', 'en', 'jp'] as const
+import type { MetadataRoute } from 'next'
+import { getLanguageUrl, LANGUAGE_ALTERNATES, LAST_MODIFIED, SUPPORTED_LANGUAGES } from '@shared/constants/seo'
 
-    return [
-        ...langs.map((lang) => ({
-            url: siteUrl + `/${lang}`,
-            lastModified: new Date(),
-            changeFrequency: 'daily',
-            priority: 1,
-        })),
-    ]
+const sitemap = () => {
+    return SUPPORTED_LANGUAGES.map((language) => ({
+        url: getLanguageUrl(language),
+        lastModified: LAST_MODIFIED,
+        changeFrequency: 'monthly',
+        priority: 1,
+        alternates: {
+            languages: LANGUAGE_ALTERNATES,
+        },
+    })) satisfies MetadataRoute.Sitemap
 }
+
+export default sitemap
