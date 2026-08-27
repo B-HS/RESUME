@@ -1,4 +1,5 @@
 import { Analytics } from '@vercel/analytics/next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Noto_Sans_KR } from 'next/font/google'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
@@ -81,6 +82,7 @@ const Layout: FC<PropsWithChildren<LayoutProps>> = async ({ params, children }) 
                 <VirtualScroll />
                 <GoToTop />
                 <Analytics />
+                <SpeedInsights />
             </body>
         </html>
     )
