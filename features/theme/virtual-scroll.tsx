@@ -61,7 +61,7 @@ const VirtualScrollComponent = () => {
 
     return (
         scrollData.isScrollable && (
-            <section className='fixed right-0 top-0 h-full w-0.75 z-[60]'>
+            <section className='fixed right-0 top-0 h-full w-0.75 z-60'>
                 <section
                     className='absolute right-0 w-0.75 rounded-xs bg-foreground/50 will-change-transform transition-opacity duration-200'
                     style={{
