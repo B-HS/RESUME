@@ -68,8 +68,8 @@ export const JAPANESE_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
 
     WORK_TOY_NAME: '個人プロジェクト',
     WORK_TOY_PERIOD: '2022. 11 - 現在',
-    WORK_TOY_LOCATION: '韓国、ソウル',
-    WORK_TOY_ROLE: 'Independent Developer',
+    WORK_TOY_LOCATION: ' ',
+    WORK_TOY_ROLE: 'Toys',
     WORK_TOY_BBLOG_TITLE: 'BBlog',
     WORK_TOY_WEBTOON_TITLE: 'Webtoon Bookmarker',
     WORK_TOY_KATARU_TITLE: 'kataru',
@@ -90,4 +90,20 @@ export const JAPANESE_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     WORK_TOY_WEBTOON_SKILLS: 'Chrome MV3|Bun|React|shadcn/ui',
     WORK_TOY_KATARU_SKILLS: 'Hono|React|Cloudflare|Drizzle|MySQL',
     WORK_TOY_BHUB_SKILLS: 'Bun|Hono|Drizzle|MySQL|Cloudflare R2',
+
+    ETC_CYBER_UNIVERSITY_PERIOD: '2025. 03 - 2027. 02 卒業予定',
+    ETC_CYBER_UNIVERSITY_DESCRIPTION: '高麗サイバー大学校 コンピュータ工学科 在学中',
+    ETC_FULLSTACK_COURSE_PERIOD: '2022. 04 - 2022. 10',
+    ETC_FULLSTACK_COURSE_DESCRIPTION: '釜山東成職業専門学校 フルスタック課程',
+    ETC_AGRICULTURAL_HERITAGE_PERIOD: '2019. 05',
+    ETC_AGRICULTURAL_HERITAGE_DESCRIPTION: '第6回東アジア農業遺産学会 現地見学 韓日通訳',
+    ETC_YUMENOI_INTERNSHIP_PERIOD: '2018. 09 - 2019. 01',
+    ETC_YUMENOI_INTERNSHIP_DESCRIPTION: '旅館 夢乃井 インターンシップ',
+    ETC_MASAN_UNIVERSITY_PERIOD: '2014. 03 - 2019. 02',
+    ETC_MASAN_UNIVERSITY_DESCRIPTION: '馬山大学 観光日本語学科',
+
+    SKILLS_FRONTEND: 'Frontend',
+    SKILLS_BACKEND: 'Backend',
+    SKILLS_CLOUD: 'Cloud',
+    SKILLS_INFRASTRUCTURE: 'Infrastructure',
 }

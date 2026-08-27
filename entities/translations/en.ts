@@ -69,8 +69,8 @@ export const ENGLISH_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
 
     WORK_TOY_NAME: 'Personal Projects',
     WORK_TOY_PERIOD: 'Nov 2022 - Present',
-    WORK_TOY_LOCATION: 'Seoul, South Korea',
-    WORK_TOY_ROLE: 'Independent Developer',
+    WORK_TOY_LOCATION: ' ',
+    WORK_TOY_ROLE: 'Toys',
     WORK_TOY_BBLOG_TITLE: 'BBlog',
     WORK_TOY_WEBTOON_TITLE: 'Webtoon Bookmarker',
     WORK_TOY_KATARU_TITLE: 'kataru',
@@ -91,4 +91,20 @@ export const ENGLISH_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     WORK_TOY_WEBTOON_SKILLS: 'Chrome MV3|Bun|React|shadcn/ui',
     WORK_TOY_KATARU_SKILLS: 'Hono|React|Cloudflare|Drizzle|MySQL',
     WORK_TOY_BHUB_SKILLS: 'Bun|Hono|Drizzle|MySQL|Cloudflare R2',
+
+    ETC_CYBER_UNIVERSITY_PERIOD: 'Mar 2025 - Expected Feb 2027',
+    ETC_CYBER_UNIVERSITY_DESCRIPTION: 'Korea Cyber University, Department of Computer Science',
+    ETC_FULLSTACK_COURSE_PERIOD: 'Apr 2022 - Oct 2022',
+    ETC_FULLSTACK_COURSE_DESCRIPTION: 'Busan Dongsung Vocational Training Institute, Full-stack Program',
+    ETC_AGRICULTURAL_HERITAGE_PERIOD: 'May 2019',
+    ETC_AGRICULTURAL_HERITAGE_DESCRIPTION: '6th East Asian Agricultural Heritage Conference Field Visit KR-JP Interpreter',
+    ETC_YUMENOI_INTERNSHIP_PERIOD: 'Sep 2018 - Jan 2019',
+    ETC_YUMENOI_INTERNSHIP_DESCRIPTION: 'Ryokan Yumenoi Internship',
+    ETC_MASAN_UNIVERSITY_PERIOD: 'Mar 2014 - Feb 2019',
+    ETC_MASAN_UNIVERSITY_DESCRIPTION: 'Masan University, Tourism Japanese Department',
+
+    SKILLS_FRONTEND: 'Frontend',
+    SKILLS_BACKEND: 'Backend',
+    SKILLS_CLOUD: 'Cloud',
+    SKILLS_INFRASTRUCTURE: 'Infrastructure',
 }

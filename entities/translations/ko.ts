@@ -69,8 +69,8 @@ export const KOREAN_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
 
     WORK_TOY_NAME: '개인 프로젝트',
     WORK_TOY_PERIOD: '22. 11 - 현재',
-    WORK_TOY_LOCATION: '대한민국, 서울',
-    WORK_TOY_ROLE: 'Independent Developer',
+    WORK_TOY_LOCATION: ' ',
+    WORK_TOY_ROLE: 'Toys',
     WORK_TOY_BBLOG_TITLE: 'BBlog',
     WORK_TOY_WEBTOON_TITLE: 'Webtoon Bookmarker',
     WORK_TOY_KATARU_TITLE: 'kataru',
@@ -91,4 +91,20 @@ export const KOREAN_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     WORK_TOY_WEBTOON_SKILLS: 'Chrome MV3|Bun|React|shadcn/ui',
     WORK_TOY_KATARU_SKILLS: 'Hono|React|Cloudflare|Drizzle|MySQL',
     WORK_TOY_BHUB_SKILLS: 'Bun|Hono|Drizzle|MySQL|Cloudflare R2',
+
+    ETC_CYBER_UNIVERSITY_PERIOD: '25. 03 - 27. 02 예정',
+    ETC_CYBER_UNIVERSITY_DESCRIPTION: '고려사이버대학교 컴퓨터공학과 재학',
+    ETC_FULLSTACK_COURSE_PERIOD: '22. 04 - 22. 10',
+    ETC_FULLSTACK_COURSE_DESCRIPTION: '부산 동성 직업전문학교 풀스택 과정',
+    ETC_AGRICULTURAL_HERITAGE_PERIOD: '19. 05',
+    ETC_AGRICULTURAL_HERITAGE_DESCRIPTION: '제6회 동아시아 농업유산 학회 현장견학 한일 통역',
+    ETC_YUMENOI_INTERNSHIP_PERIOD: '18. 09 - 19. 01',
+    ETC_YUMENOI_INTERNSHIP_DESCRIPTION: '료칸 유메노이 인턴십',
+    ETC_MASAN_UNIVERSITY_PERIOD: '14. 03 - 19. 02',
+    ETC_MASAN_UNIVERSITY_DESCRIPTION: '마산대학교 관광일본어과',
+
+    SKILLS_FRONTEND: 'Frontend',
+    SKILLS_BACKEND: 'Backend',
+    SKILLS_CLOUD: 'Cloud',
+    SKILLS_INFRASTRUCTURE: 'Infrastructure',
 }
