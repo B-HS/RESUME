@@ -66,7 +66,7 @@ export const JAPANESE_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     WORK_KEYWORDSSTUDIO_ROLE: 'LQA Tester',
     WORK_KEYWORDSSTUDIO_LQA_TITLE: 'ゲームLQAおよびオンボーディングプロセスの改善',
     WORK_KEYWORDSSTUDIO_LQA_DESCRIPTION:
-        '7件のプロジェクトでLQAを実施し、リリース完了を支援 \n 韓国語人材が不足する状況でTFチームを編成し、オンボーディング支援とテストを並行して実施して、オンボーディング期間を2-3日 -> 1日に短縮',
+        '7件以上のプロジェクトでLQAを実施し、リリース完了を支援 \n 韓国語人材が不足する状況でTFチームを編成し、オンボーディング支援とテストを並行して実施して、オンボーディング期間を2-3日 -> 1日に短縮',
     WORK_KEYWORDSSTUDIO_LQA_SKILLS: 'Redmine|MS Excel|JIRA',
 
     WORK_TOY_NAME: '個人プロジェクト',

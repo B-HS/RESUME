@@ -67,7 +67,7 @@ export const ENGLISH_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     WORK_KEYWORDSSTUDIO_ROLE: 'LQA Tester',
     WORK_KEYWORDSSTUDIO_LQA_TITLE: 'Game LQA and Onboarding Process Improvement',
     WORK_KEYWORDSSTUDIO_LQA_DESCRIPTION:
-        'Conducted LQA for 7 projects and supported their successful releases \n Formed a task force amid a shortage of Korean-language personnel, supporting onboarding while testing in parallel and reducing onboarding time from 2-3 days -> 1 day',
+        'Conducted LQA for 7+ projects and supported their successful releases \n Formed a task force amid a shortage of Korean-language personnel, supporting onboarding while testing in parallel and reducing onboarding time from 2-3 days -> 1 day',
     WORK_KEYWORDSSTUDIO_LQA_SKILLS: 'Redmine|MS Excel|JIRA',
 
     WORK_TOY_NAME: 'Personal Projects',
