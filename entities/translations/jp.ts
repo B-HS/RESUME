@@ -65,4 +65,29 @@ export const JAPANESE_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     WORK_KEYWORDSSTUDIO_LQA_DESCRIPTION:
         '7件のプロジェクトでLQAを実施し、リリース完了を支援 \n 韓国語人材が不足する状況でTFチームを編成し、オンボーディング支援とテストを並行して実施して、オンボーディング期間を2-3日 -> 1日に短縮',
     WORK_KEYWORDSSTUDIO_LQA_SKILLS: 'Redmine|MS Excel|JIRA',
+
+    WORK_TOY_NAME: '個人プロジェクト',
+    WORK_TOY_PERIOD: '2022. 11 - 現在',
+    WORK_TOY_LOCATION: '韓国、ソウル',
+    WORK_TOY_ROLE: 'Independent Developer',
+    WORK_TOY_BBLOG_TITLE: 'BBlog',
+    WORK_TOY_WEBTOON_TITLE: 'Webtoon Bookmarker',
+    WORK_TOY_KATARU_TITLE: 'kataru',
+    WORK_TOY_BHUB_TITLE: 'b-hub',
+    WORK_TOY_BBLOG_DESCRIPTION:
+        '2022年から運用する個人ブログをVue、Svelte、Next.jsへ移行しながら長期保守 \n MDXベースの記事、タグフィルタと検索、コメント、Logタイムラインなどのコンテンツ管理機能を実装 \n Vercelフロントエンド、b-hubバックエンド、MySQL、Cloudflare R2にサービス運用構成を分離',
+    WORK_TOY_WEBTOON_DESCRIPTION:
+        'ネイバーウェブトゥーンのメインにブックマークタブを挿入するChrome Web Store公開拡張機能を開発・運用 \n Content Script、React Popup、chrome.storage.localでユーザー別ウェブトゥーンブックマーク管理を構築 \n v1 -> v2再構築でManifest V2 -> V3、Chakra UI -> shadcn/ui、Viteベースビルド -> Bunビルドパイプラインへ移行',
+    WORK_TOY_KATARU_DESCRIPTION:
+        'Hono、React SSR、IslandアーキテクチャによるマルチユーザーブログSaaSを設計・実装 \n ユーザー別サブパスブログとCSR管理アプリケーションを分離 \n HTMLとMarkdownの双方向変換エディタとCloudflare R2向けHonoベースSharp画像変換サーバーを実装',
+    WORK_TOY_BHUB_DESCRIPTION:
+        '8ドメインの個人サービスを統合するバックエンドハブを設計・運用 \n Bun、Hono、Drizzle、MySQLで認証、ファイル処理、API、スケジューリング機能を統合 \n RFC 4791 CalDAVサーバーを実装し、1,704件以上のテストでコアドメインの動作を検証',
+    WORK_TOY_BBLOG_SITE: 'https://blog.gumyo.net',
+    WORK_TOY_WEBTOON_SITE: 'https://chromewebstore.google.com/detail/cnfglfaobnkgkcnagfbaeilbpkcjcanh',
+    WORK_TOY_KATARU_SITE: 'https://kataru.dev',
+    WORK_TOY_BHUB_SITE: 'https://github.com/B-HS/b-hub',
+    WORK_TOY_BBLOG_SKILLS: 'Next.js|TypeScript|Drizzle|MySQL|better-auth',
+    WORK_TOY_WEBTOON_SKILLS: 'Chrome MV3|Bun|React|shadcn/ui',
+    WORK_TOY_KATARU_SKILLS: 'Hono|React|Cloudflare|Drizzle|MySQL',
+    WORK_TOY_BHUB_SKILLS: 'Bun|Hono|Drizzle|MySQL|Cloudflare R2',
 }

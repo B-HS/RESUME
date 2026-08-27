@@ -66,4 +66,29 @@ export const ENGLISH_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     WORK_KEYWORDSSTUDIO_LQA_DESCRIPTION:
         'Conducted LQA for 7 projects and supported their successful releases \n Formed a task force amid a shortage of Korean-language personnel, supporting onboarding while testing in parallel and reducing onboarding time from 2-3 days -> 1 day',
     WORK_KEYWORDSSTUDIO_LQA_SKILLS: 'Redmine|MS Excel|JIRA',
+
+    WORK_TOY_NAME: 'Personal Projects',
+    WORK_TOY_PERIOD: 'Nov 2022 - Present',
+    WORK_TOY_LOCATION: 'Seoul, South Korea',
+    WORK_TOY_ROLE: 'Independent Developer',
+    WORK_TOY_BBLOG_TITLE: 'BBlog',
+    WORK_TOY_WEBTOON_TITLE: 'Webtoon Bookmarker',
+    WORK_TOY_KATARU_TITLE: 'kataru',
+    WORK_TOY_BHUB_TITLE: 'b-hub',
+    WORK_TOY_BBLOG_DESCRIPTION:
+        'Maintained a personal blog since 2022 while migrating its stack through Vue, Svelte, and Next.js \n Built MDX articles, tag filtering and search, comments, and a Log timeline for content management \n Separated the service architecture across a Vercel frontend, b-hub backend, MySQL, and Cloudflare R2',
+    WORK_TOY_WEBTOON_DESCRIPTION:
+        'Developed and maintained a Chrome Web Store extension that injects a bookmark tab into the Naver Webtoon homepage \n Built user-specific webtoon bookmark management with a Content Script, React Popup, and chrome.storage.local \n Rebuilt v1 -> v2 with Manifest V2 -> V3, Chakra UI -> shadcn/ui, and a Vite-based build -> Bun build pipeline',
+    WORK_TOY_KATARU_DESCRIPTION:
+        'Designed and built a multi-user blog SaaS with Hono, React SSR, and an Island architecture \n Separated user-specific subpath blogs from a CSR admin application \n Built an HTML and Markdown bidirectional editor and a Hono-based Sharp image conversion server for Cloudflare R2',
+    WORK_TOY_BHUB_DESCRIPTION:
+        'Designed and operate a backend hub that integrates 8 domains of personal services \n Unified authentication, file processing, APIs, and scheduling with Bun, Hono, Drizzle, and MySQL \n Implemented an RFC 4791 CalDAV server and verified core domain behavior with 1,704+ tests',
+    WORK_TOY_BBLOG_SITE: 'https://blog.gumyo.net',
+    WORK_TOY_WEBTOON_SITE: 'https://chromewebstore.google.com/detail/cnfglfaobnkgkcnagfbaeilbpkcjcanh',
+    WORK_TOY_KATARU_SITE: 'https://kataru.dev',
+    WORK_TOY_BHUB_SITE: 'https://github.com/B-HS/b-hub',
+    WORK_TOY_BBLOG_SKILLS: 'Next.js|TypeScript|Drizzle|MySQL|better-auth',
+    WORK_TOY_WEBTOON_SKILLS: 'Chrome MV3|Bun|React|shadcn/ui',
+    WORK_TOY_KATARU_SKILLS: 'Hono|React|Cloudflare|Drizzle|MySQL',
+    WORK_TOY_BHUB_SKILLS: 'Bun|Hono|Drizzle|MySQL|Cloudflare R2',
 }

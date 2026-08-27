@@ -66,4 +66,29 @@ export const KOREAN_TRANSLATIONS: Record<(typeof WORDS)[number], string> = {
     WORK_KEYWORDSSTUDIO_LQA_DESCRIPTION:
         '7개 프로젝트의 LQA를 진행해 출시 완료 \n 한국어 인력 부족 상황에서 TF팀을 구성해 온보딩 지원과 테스팅을 병행하고, 온보딩 기간 2-3일 -> 1일 단축',
     WORK_KEYWORDSSTUDIO_LQA_SKILLS: 'Redmine|MS Excel|JIRA',
+
+    WORK_TOY_NAME: '개인 프로젝트',
+    WORK_TOY_PERIOD: '22. 11 - 현재',
+    WORK_TOY_LOCATION: '대한민국, 서울',
+    WORK_TOY_ROLE: 'Independent Developer',
+    WORK_TOY_BBLOG_TITLE: 'BBlog',
+    WORK_TOY_WEBTOON_TITLE: 'Webtoon Bookmarker',
+    WORK_TOY_KATARU_TITLE: 'kataru',
+    WORK_TOY_BHUB_TITLE: 'b-hub',
+    WORK_TOY_BBLOG_DESCRIPTION:
+        '2022년부터 운영한 개인 블로그를 Vue, Svelte, Next.js로 전환하며 장기 유지보수 \n MDX 기반 게시글, 태그 필터와 검색, 댓글, Log 타임라인 등 콘텐츠 관리 기능 구현 \n Vercel 프론트엔드, b-hub 백엔드, MySQL, Cloudflare R2로 서비스 운영 구조 분리',
+    WORK_TOY_WEBTOON_DESCRIPTION:
+        '네이버 웹툰 메인에 북마크 탭을 주입하는 Chrome Web Store 배포 익스텐션 개발 및 운영 \n Content Script와 React Popup, chrome.storage.local을 구성해 사용자별 웹툰 북마크 관리 \n v1 -> v2 재구축으로 Manifest V2 -> V3, Chakra UI -> shadcn/ui, Vite 기반 빌드 -> Bun 빌드 파이프라인 전환',
+    WORK_TOY_KATARU_DESCRIPTION:
+        '다중 사용자 블로그 SaaS를 Hono, React SSR, Island 아키텍처로 설계 및 구현 \n 사용자별 서브패스 블로그와 관리용 CSR 애플리케이션 분리 \n HTML과 Markdown 양방향 변환 기반 에디터 및 Cloudflare R2용 Hono 기반 Sharp 이미지 변환 서버 구현',
+    WORK_TOY_BHUB_DESCRIPTION:
+        '8개 도메인의 개인 서비스를 통합하는 백엔드 허브 설계 및 운영 \n Bun, Hono, Drizzle, MySQL 기반으로 인증, 파일 처리, API, 스케줄링 기능 통합 \n RFC 4791 CalDAV 서버를 구현하고 1,704개 이상의 테스트로 핵심 도메인 동작 검증',
+    WORK_TOY_BBLOG_SITE: 'https://blog.gumyo.net',
+    WORK_TOY_WEBTOON_SITE: 'https://chromewebstore.google.com/detail/cnfglfaobnkgkcnagfbaeilbpkcjcanh',
+    WORK_TOY_KATARU_SITE: 'https://kataru.dev',
+    WORK_TOY_BHUB_SITE: 'https://github.com/B-HS/b-hub',
+    WORK_TOY_BBLOG_SKILLS: 'Next.js|TypeScript|Drizzle|MySQL|better-auth',
+    WORK_TOY_WEBTOON_SKILLS: 'Chrome MV3|Bun|React|shadcn/ui',
+    WORK_TOY_KATARU_SKILLS: 'Hono|React|Cloudflare|Drizzle|MySQL',
+    WORK_TOY_BHUB_SKILLS: 'Bun|Hono|Drizzle|MySQL|Cloudflare R2',
 }
