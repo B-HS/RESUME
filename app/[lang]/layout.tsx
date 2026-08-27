@@ -65,7 +65,7 @@ export const generateMetadata = async ({ params }: LayoutProps) => {
     } satisfies Metadata
 }
 
-const nanumGothic = Noto_Sans_KR({
+const notoSans = Noto_Sans_KR({
     subsets: ['latin'],
     variable: '--font-noto-sans-kr',
 })
@@ -76,7 +76,7 @@ const Layout: FC<PropsWithChildren<LayoutProps>> = async ({ params, children }) 
     if (!isSupportedLanguage(lang)) notFound()
 
     return (
-        <html lang={LANGUAGE_CONFIG[lang].htmlLang} className={nanumGothic.variable}>
+        <html lang={LANGUAGE_CONFIG[lang].htmlLang} className={notoSans.variable}>
             <body className='max-w-3xl mx-auto min-h-dvh w-full antialiased'>
                 {children}
                 <VirtualScroll />
