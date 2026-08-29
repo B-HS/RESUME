@@ -1,18 +1,18 @@
-import { LangType, translator } from '@entities/translations'
+import { FC } from 'react'
+import type { WebResumeCompany } from '@entities/web-resume/web-resume.type'
 import { SectionHeader } from '@features/common/section-header'
 import { ResumeSection } from '@features/resume/section'
-import { FC } from 'react'
+import type { SupportedLanguage } from '@shared/constants/seo'
 
-type WorkExperienceWidget = { lang: LangType }
+type WorkExperienceProps = { label: string; companies: WebResumeCompany[]; lang: SupportedLanguage }
 
-export const WorkExperience: FC<WorkExperienceWidget> = ({ lang }) => {
-    const t = translator({ lang })
+export const WorkExperience: FC<WorkExperienceProps> = ({ label, companies, lang }) => {
     return (
         <>
-            <SectionHeader title={t('WORK_EXPERIENCE')} />
-            <ResumeSection workName='GLOBALKNOWLEDGE' workList={['FLUNTI', 'DESIGNSYSTEM', 'STUDIO', 'AI', 'CMS']} lang={lang} />
-            <ResumeSection workName='PROSOFT' workList={['MIGRATION', 'DBMIGRATION']} lang={lang} />
-            <ResumeSection workName='KEYWORDSSTUDIO' workList={['LQA']} lang={lang} />
+            <SectionHeader title={label} />
+            {companies.map((company) => (
+                <ResumeSection key={company.name[lang]} company={company} lang={lang} />
+            ))}
         </>
     )
 }

@@ -4,7 +4,8 @@ import { Noto_Sans_KR } from 'next/font/google'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import type { FC, PropsWithChildren } from 'react'
-import { translator } from '@entities/translations'
+import { TanstackQueryProvider } from '@app/tanstack-query-provider'
+import { fetchWebResume } from '@entities/web-resume/web-resume.api'
 import { VirtualScroll } from '@features/theme/virtual-scroll'
 import {
     getLanguageUrl,
@@ -30,9 +31,9 @@ export const generateMetadata = async ({ params }: LayoutProps) => {
 
     if (!isSupportedLanguage(lang)) notFound()
 
-    const t = translator({ lang })
-    const title = t('SEO_TITLE')
-    const description = t('SEO_DESCRIPTION')
+    const { webResume } = await fetchWebResume()
+    const title = webResume.seo.title[lang]
+    const description = webResume.seo.description[lang]
     const canonicalUrl = getLanguageUrl(lang)
     const imageUrl = `/${lang}/opengraph-image`
 
@@ -78,7 +79,7 @@ const Layout: FC<PropsWithChildren<LayoutProps>> = async ({ params, children }) 
     return (
         <html lang={LANGUAGE_CONFIG[lang].htmlLang} className={notoSans.variable}>
             <body className='max-w-3xl mx-auto min-h-dvh w-full antialiased'>
-                {children}
+                <TanstackQueryProvider>{children}</TanstackQueryProvider>
                 <VirtualScroll />
                 <GoToTop />
                 <Analytics />

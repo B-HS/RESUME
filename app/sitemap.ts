@@ -1,10 +1,12 @@
 import type { MetadataRoute } from 'next'
-import { getLanguageUrl, LANGUAGE_ALTERNATES, LAST_MODIFIED, SUPPORTED_LANGUAGES } from '@shared/constants/seo'
+import { fetchWebResume } from '@entities/web-resume/web-resume.api'
+import { getLanguageUrl, LANGUAGE_ALTERNATES, SUPPORTED_LANGUAGES } from '@shared/constants/seo'
 
-const sitemap = () => {
+const sitemap = async () => {
+    const { updatedAt } = await fetchWebResume()
     return SUPPORTED_LANGUAGES.map((language) => ({
         url: getLanguageUrl(language),
-        lastModified: LAST_MODIFIED,
+        lastModified: updatedAt,
         changeFrequency: 'monthly',
         priority: 1,
         alternates: {

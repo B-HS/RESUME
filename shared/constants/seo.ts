@@ -2,7 +2,6 @@ export const SITE_URL = 'https://resume.gumyo.net'
 export const SITE_NAME = 'Hyunseok Byun Resume'
 export const PERSON_NAME = 'Hyunseok Byun'
 export const DEFAULT_LANGUAGE = 'ko'
-export const LAST_MODIFIED = '2026-08-27T00:00:00+09:00'
 
 export const SUPPORTED_LANGUAGES = ['ko', 'en', 'jp'] as const
 

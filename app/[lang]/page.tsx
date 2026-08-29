@@ -1,17 +1,17 @@
+import { dehydrate, HydrationBoundary, QueryClient } from '@tanstack/react-query'
 import { notFound } from 'next/navigation'
 import type { FC } from 'react'
-import { translator } from '@entities/translations'
+import { webResumeQueryOptions } from '@entities/web-resume/web-resume.api'
 import {
     getLanguageUrl,
     isSupportedLanguage,
     LANGUAGE_CONFIG,
-    LAST_MODIFIED,
-    PERSON_NAME,
     PROFILE_LINKS,
     PROFILE_SKILLS,
     SITE_NAME,
     SITE_URL,
     SUPPORTED_LANGUAGES,
+    PERSON_NAME,
 } from '@shared/constants/seo'
 import { Resume } from '@widgets/resume'
 
@@ -24,7 +24,8 @@ const Page: FC<PageProps> = async ({ params }) => {
 
     if (!isSupportedLanguage(lang)) notFound()
 
-    const t = translator({ lang })
+    const queryClient = new QueryClient()
+    const { webResume, updatedAt } = await queryClient.fetchQuery(webResumeQueryOptions())
     const canonicalUrl = getLanguageUrl(lang)
     const jsonLd = {
         '@context': 'https://schema.org',
@@ -41,10 +42,10 @@ const Page: FC<PageProps> = async ({ params }) => {
                 '@type': 'ProfilePage',
                 '@id': `${canonicalUrl}#profile-page`,
                 url: canonicalUrl,
-                name: t('SEO_TITLE'),
-                description: t('SEO_DESCRIPTION'),
+                name: webResume.seo.title[lang],
+                description: webResume.seo.description[lang],
                 inLanguage: LANGUAGE_CONFIG[lang].htmlLang,
-                dateModified: LAST_MODIFIED,
+                dateModified: updatedAt,
                 isPartOf: { '@id': `${SITE_URL}/#website` },
                 mainEntity: {
                     '@type': 'Person',
@@ -52,7 +53,7 @@ const Page: FC<PageProps> = async ({ params }) => {
                     name: PERSON_NAME,
                     alternateName: ['변현석', 'ビョン・ヒョンソク'],
                     url: canonicalUrl,
-                    email: 'mailto:hs@gumyo.net',
+                    email: `mailto:${webResume.profile.email}`,
                     jobTitle: ['Frontend Engineer', 'AI Engineer'],
                     address: {
                         '@type': 'PostalAddress',
@@ -72,9 +73,11 @@ const Page: FC<PageProps> = async ({ params }) => {
 
     return (
         <>
-            <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\u003c') }} />
+            <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }} />
             <main>
-                <Resume lang={lang} />
+                <HydrationBoundary state={dehydrate(queryClient)}>
+                    <Resume lang={lang} />
+                </HydrationBoundary>
             </main>
         </>
     )

@@ -1,21 +1,27 @@
-import { LangType } from '@entities/translations'
+'use client'
+
+import { FC } from 'react'
+import { useGetWebResume } from '@entities/web-resume/web-resume.query'
 import { AdditionalExperience } from '@features/resume/additional-experience'
 import { Introduce } from '@features/resume/introduce'
 import { PersonalProjects } from '@features/resume/personal-projects'
 import { Skills } from '@features/resume/skills'
 import { WorkExperience } from '@features/resume/work-experience'
-import { FC } from 'react'
+import type { SupportedLanguage } from '@shared/constants/seo'
 
-type ResumeWidget = { lang: LangType }
+type ResumeProps = { lang: SupportedLanguage }
 
-export const Resume: FC<ResumeWidget> = ({ lang }) => {
+export const Resume: FC<ResumeProps> = ({ lang }) => {
+    const { data } = useGetWebResume()
+    const { webResume } = data
+
     return (
         <div className='flex flex-col pb-20'>
-            <Introduce lang={lang} />
-            <WorkExperience lang={lang} />
-            <PersonalProjects lang={lang} />
-            <Skills lang={lang} />
-            <AdditionalExperience lang={lang} />
+            <Introduce profile={webResume.profile} lang={lang} />
+            <WorkExperience label={webResume.labels.workExperience[lang]} companies={webResume.workExperiences} lang={lang} />
+            <PersonalProjects label={webResume.labels.projects[lang]} block={webResume.personalProjects} lang={lang} />
+            <Skills label={webResume.labels.skills[lang]} groups={webResume.skillGroups} lang={lang} />
+            <AdditionalExperience label={webResume.labels.etc[lang]} items={webResume.additionalExperiences} lang={lang} />
         </div>
     )
 }

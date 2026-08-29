@@ -1,27 +1,19 @@
-import { LangType, translator } from '@entities/translations'
-import { SectionHeader } from '@features/common/section-header'
 import { FC } from 'react'
+import type { WebResumeAdditionalExperience } from '@entities/web-resume/web-resume.type'
+import { SectionHeader } from '@features/common/section-header'
+import type { SupportedLanguage } from '@shared/constants/seo'
 
-type AdditionalExperienceProps = { lang: LangType }
+type AdditionalExperienceProps = { label: string; items: WebResumeAdditionalExperience[]; lang: SupportedLanguage }
 
-export const AdditionalExperience: FC<AdditionalExperienceProps> = ({ lang }) => {
-    const t = translator({ lang })
-    const additionalExperiences = [
-        { period: t('ETC_CYBER_UNIVERSITY_PERIOD'), description: t('ETC_CYBER_UNIVERSITY_DESCRIPTION') },
-        { period: t('ETC_FULLSTACK_COURSE_PERIOD'), description: t('ETC_FULLSTACK_COURSE_DESCRIPTION') },
-        { period: t('ETC_AGRICULTURAL_HERITAGE_PERIOD'), description: t('ETC_AGRICULTURAL_HERITAGE_DESCRIPTION') },
-        { period: t('ETC_YUMENOI_INTERNSHIP_PERIOD'), description: t('ETC_YUMENOI_INTERNSHIP_DESCRIPTION') },
-        { period: t('ETC_MASAN_UNIVERSITY_PERIOD'), description: t('ETC_MASAN_UNIVERSITY_DESCRIPTION') },
-    ]
-
+export const AdditionalExperience: FC<AdditionalExperienceProps> = ({ label, items, lang }) => {
     return (
         <>
-            <SectionHeader title={t('ETC')} />
+            <SectionHeader title={label} />
             <ul className='p-1.5 text-sm'>
-                {additionalExperiences.map((experience) => (
-                    <li key={experience.period} className='flex gap-3 py-1'>
-                        <span className='w-30 shrink-0 text-xs text-foreground/75'>{experience.period}</span>
-                        <span>{experience.description}</span>
+                {items.map((experience) => (
+                    <li key={experience.period[lang]} className='flex gap-3 py-1'>
+                        <span className='w-30 shrink-0 text-xs text-foreground/75'>{experience.period[lang]}</span>
+                        <span>{experience.description[lang]}</span>
                     </li>
                 ))}
             </ul>
