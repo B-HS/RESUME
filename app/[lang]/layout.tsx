@@ -4,6 +4,7 @@ import { Noto_Sans_KR } from 'next/font/google'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import type { FC, PropsWithChildren } from 'react'
+import { Toaster } from 'sonner'
 import { TanstackQueryProvider } from '@app/tanstack-query-provider'
 import { fetchWebResume } from '@entities/web-resume/web-resume.api'
 import { VirtualScroll } from '@features/theme/virtual-scroll'
@@ -82,6 +83,7 @@ const Layout: FC<PropsWithChildren<LayoutProps>> = async ({ params, children }) 
                 <TanstackQueryProvider>{children}</TanstackQueryProvider>
                 <VirtualScroll />
                 <GoToTop />
+                <Toaster position='top-center' richColors />
                 <Analytics />
                 <SpeedInsights />
             </body>

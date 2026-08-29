@@ -31,6 +31,11 @@ const webResumeAdditionalExperienceSchema = z.object({
     description: localizedTextSchema,
 })
 
+const webResumeCustomSectionSchema = z.object({
+    label: localizedTextSchema,
+    items: z.array(webResumeAdditionalExperienceSchema),
+})
+
 const webResumeProfileSchema = z.object({
     firstName: z.string(),
     lastName: z.string(),
@@ -65,6 +70,7 @@ const webResumeDataSchema = z.object({
     personalProjects: webResumeCompanySchema,
     skillGroups: z.array(webResumeSkillGroupSchema),
     additionalExperiences: z.array(webResumeAdditionalExperienceSchema),
+    customSections: z.array(webResumeCustomSectionSchema).default([]),
 })
 
 export const webResumeResponseSchema = z.object({
@@ -77,3 +83,4 @@ export type WebResumeProfile = z.infer<typeof webResumeProfileSchema>
 export type WebResumeCompany = z.infer<typeof webResumeCompanySchema>
 export type WebResumeSkillGroup = z.infer<typeof webResumeSkillGroupSchema>
 export type WebResumeAdditionalExperience = z.infer<typeof webResumeAdditionalExperienceSchema>
+export type WebResumeCustomSection = z.infer<typeof webResumeCustomSectionSchema>
