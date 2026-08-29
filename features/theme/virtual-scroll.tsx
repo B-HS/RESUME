@@ -8,7 +8,7 @@ const VirtualScrollComponent = () => {
     const path = usePathname()
     const timeoutRef = useRef<NodeJS.Timeout>(null)
     const [scrollData, setScrollData] = useState({ thumbHeight: 0, thumbTop: 0, isScrollable: false })
-    const [isVisible, setIsVisible] = useState(true)
+    const [isVisible, setIsVisible] = useState(false)
 
     const handleScroll = () => {
         requestAnimationFrame(() => {
@@ -63,11 +63,10 @@ const VirtualScrollComponent = () => {
         scrollData.isScrollable && (
             <section className='fixed right-0 top-0 h-full w-0.75 z-60'>
                 <section
-                    className='absolute right-0 w-0.75 rounded-xs bg-foreground/50 will-change-transform transition-opacity duration-200'
+                    className={`absolute right-0 w-0.75 rounded-xs bg-foreground/50 will-change-transform transition-opacity duration-300 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}
                     style={{
                         height: `${scrollData.thumbHeight}%`,
                         top: `${scrollData.thumbTop}%`,
-                        opacity: isVisible ? 1 : 0,
                     }}
                 />
             </section>
